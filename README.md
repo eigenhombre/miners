@@ -1,5 +1,6 @@
 ```
-rm -rf miners
+make clean
+make miners
 ./build.sh
 This is SBCL 2.1.8, an implementation of ANSI Common Lisp.
 More information about SBCL is available at <http://www.sbcl.org/>.
@@ -21,67 +22,67 @@ writing 1840 bytes from the static space at 0x300200000
 writing 0 bytes from the immobile space at 0x300300000
 writing 44367872 bytes from the dynamic space at 0x7003000000
 done]
-test -n "/Users/jacobsen/bin"  # $BINDIR
-cp miners /Users/jacobsen/bin
-Han Ria Sta Lorelyce: 100
-Helarolria Id: 100
-Ce Illici Lett: 100
-Riceth Ida: 100
-Ceau Tr: 100
-Ret: 100
-Franean Isa And Ineam Idaen: 100
-Isti Dra Ka: 100
-Me Istaris Lieeleiann: 100
-Steeanng: 100
-Mar Eorgian: 100
-Sta Aine: 100
-Naore: 100
-Annaaris Hellti Elen: 100
-Lianlene St Inamari Isarettnni Viyl: 100
-Arl Ani Ndaane: 100
-Sti: 100
-Ranmi: 100
-Il: 100
-Chelrri: 100
-Ndarierice Eorgkath: 100
-Rian Rit Se: 100
-Ric: 100
-Ashjan Roslis: 100
-Dra: 100
-Char: 100
-Jo Ndratainehe: 100
-Han Ta: 100
-Ir Ora Melime: 100
-Rettttedo: 100
-NELKIMARY
-CHSHARLORI
-ARLARYRIRITALIA
-ARLAIYNETHJANDA
-JANEIALEEERRYN
-ANNDIIS
-IRORAAUAU
-MARYRLENISLIE
-ETHANTARYELINCHA
-NETLLCHRETT
-ADNETTCHELYN
-ELYNCISSIEIDA
-LIEJALLIEBEISHANDA
-TTIENDSHERSTA
-ETTEBETHNORETRAN
-MAJANTINAISNDRES
-BERMARYLIANRRIEMAMAR
-SHAEORGLYN
-ARININDALORJESHA
-IANNMITI
-LEENRINNIE
-LORALETH
-ETTNONARRIEJULI
-EENSHARSTEREEE
-IANARISRIONIANA
-NIEDAREARIN
-ANNEORGINATINAISSA
-LLIEANANDADI
-RICERISTLENE
-LORIARIELAN
+make install
+miners
+Lian Eni Lin: 100
+Yn Ic: 100
+Han Lian: 100
+Riessie: 100
+Elle Ul Il La Arie: 100
+Enetiila: 100
+Tha Icekatto Anel: 100
+Rrie Kert: 100
+Ry: 100
+Lis: 100
+Ali: 100
+Leeloriella Andadenni Meliynge: 100
+Dr Br Meltha Ren: 100
+Ssiely: 100
+Ste: 100
+Herchel: 100
+El Rettiann Andr Cartere: 100
+Ol: 100
+Arisrle Geor Lisange: 100
+Dilene Rri: 100
+Merin: 100
+Kath: 100
+Elyn: 100
+Elyn: 100
+Nell Anel: 100
+Hris Atri No: 100
+Rist Ath Sa: 100
+Hant Or: 100
+Vi: 100
+Lieian Aine Anie Br: 100
+ISHRISTHA
+RLETTELIA
+HILEONANDRREN
+CHELMARYIDA
+IRCHERARY
+ANDITRRINA
+ISHASTIRICE
+HRISEORGESINE
+HARIIANAERI
+GAANNAISHASTIIANAJEANLOREILA
+LIISTTA
+RIANNALY
+ROARIAAMCHERARL
+HERITTEANDA
+RINEETENNI
+EYHELAMANETICENN
+ROSEMARLORLENEYNEN
+ALENNEORIMADELILLI
+RLENBRGEOR
+JAISTRISTNIE
+TEAYIL
+ILAISSALORTRBETH
+TAHIHANSHMAR
+LAURHERALIETHNDRAISAIST
+CARLINDEORGFRANDR
+THHANTEDKI
+HERCHRIERRNELLTTELA
+LAURJOVA
+ILLNETTCHASHNAILA
+TTIEICEHELANN
 Thanks for using miners!
 ```
