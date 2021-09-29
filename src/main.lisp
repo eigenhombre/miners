@@ -2,14 +2,17 @@
 
 ;; Naming things
 
-(defun person-name ())
-(loop repeat (1+ (rand-int (1+ (rand-int (1+ (rand-int 5))))))
-      collect 1)
-(loop repeat 10 collect (string-capitalize (make-name)))
-;;=>
-'("La" "Lind" "Harara" "Am" "Ieadndra" "And" "Andriceleore" "El" "Nne" "Aria")
+(defun string-join (coll)
+  (format nil "~{~A~^ ~}" coll))
 
-(define-aspect name (n :initform (syllab:make-name)))
+(defun person-name ()
+  (loop repeat (1+ (rand-int (1+ (rand-int 5))))
+        collect (string-capitalize (make-name)) into names
+        finally (return (string-join names))))
+
+;; Aspects
+
+(define-aspect name (n :initform (person-name)))
 (define-aspect age (ticks :initform 0))
 
 (define-entity miner (name age))
