@@ -1,6 +1,6 @@
 ```
-make clean
-make miners
+> make clean
+> make miners
 ./build.sh
 This is SBCL 2.1.8, an implementation of ANSI Common Lisp.
 More information about SBCL is available at <http://www.sbcl.org/>.
@@ -22,67 +22,67 @@ writing 1840 bytes from the static space at 0x300200000
 writing 0 bytes from the immobile space at 0x300300000
 writing 44367872 bytes from the dynamic space at 0x7003000000
 done]
-make install
-miners
-Lian Eni Lin: 100
-Yn Ic: 100
-Han Lian: 100
-Riessie: 100
-Elle Ul Il La Arie: 100
-Enetiila: 100
-Tha Icekatto Anel: 100
-Rrie Kert: 100
-Ry: 100
-Lis: 100
-Ali: 100
-Leeloriella Andadenni Meliynge: 100
-Dr Br Meltha Ren: 100
-Ssiely: 100
-Ste: 100
-Herchel: 100
-El Rettiann Andr Cartere: 100
-Ol: 100
-Arisrle Geor Lisange: 100
-Dilene Rri: 100
-Merin: 100
-Kath: 100
-Elyn: 100
-Elyn: 100
-Nell Anel: 100
-Hris Atri No: 100
-Rist Ath Sa: 100
-Hant Or: 100
-Vi: 100
-Lieian Aine Anie Br: 100
-ISHRISTHA
-RLETTELIA
-HILEONANDRREN
-CHELMARYIDA
-IRCHERARY
-ANDITRRINA
-ISHASTIRICE
-HRISEORGESINE
-HARIIANAERI
-GAANNAISHASTIIANAJEANLOREILA
-LIISTTA
-RIANNALY
-ROARIAAMCHERARL
-HERITTEANDA
-RINEETENNI
-EYHELAMANETICENN
-ROSEMARLORLENEYNEN
-ALENNEORIMADELILLI
-RLENBRGEOR
-JAISTRISTNIE
-TEAYIL
-ILAISSALORTRBETH
-TAHIHANSHMAR
-LAURHERALIETHNDRAISAIST
-CARLINDEORGFRANDR
-THHANTEDKI
-HERCHRIERRNELLTTELA
-LAURJOVA
-ILLNETTCHASHNAILA
-TTIEICEHELANN
+> make install
+> miners
+Ll: 100
+Ennna: 100
+Loriharikatoni Meli Nne: 100
+Ta Mar Char: 100
+Eeeen Ariashar Ber Eni: 100
+Aniemelrl Isa Nel Janema: 100
+Is: 100
+Elle Lenearie Ad: 100
+Fran Ethtrandi: 100
+Erri Lind Inda: 100
+Di Yn Nn: 100
+Yl Leen Gasti: 100
+Retelinvi: 100
+Ynithrisheel Rrie Nellbriana: 100
+Del Oni: 100
+Ichell Nni Len: 100
+Lle: 100
+Ga: 100
+Ed: 100
+Lliena: 100
+Shjuli: 100
+Erri Carl Sa Ennfran: 100
+Si: 100
+Nni: 100
+Hari Tteleciva: 100
+Char Varin Ha: 100
+Orearyau Ale Lene: 100
+Be Rit Ange: 100
+Cortan: 100
+Ina: 100
+STRLENENE
+LEARINLLINE
+THEONICHE
+ARILAETLAUR
+BETHYLERRMARIANDR
+LINARIESTA
+KATHRINANIAHERSACHARDELELYNORI
+MINARIINE
+NEKANDRAILL
+MELIANAKI
+SHANLENALORFRANRIANANNE
+ANSHERTHERINERITILLI
+ENIEELYNTO
+YLYNRIAITAHANTAT
+KATMEAREORGNITANDA
+TARERIATHEHANETTRIELLTHLORCHAR
+NELESTA
+NGELEORGLETTANGE
+RIANCARLINDRIC
+RLENSTIILAENE
+LYRYDOTHER
+CHRIADTAARIS
+ETHISTIORIE
+ROSARLEDERITAAINETTI
+ERRTHRITA
+RETTLENALENALEENRELIN
+ERIANDARLISSANN
+ANNEGEORANGELIAAU
+ATHANIDRAT
+MESHARYTINARIE
 Thanks for using miners!
 ```
