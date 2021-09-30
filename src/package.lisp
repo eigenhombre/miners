@@ -1,3 +1,3 @@
 (defpackage miners
-  (:use :cl :arrows :beast :syllab :cl-oju)
+  (:use :cl :arrows :beast :nominal :cl-oju)
   (:export :main))
