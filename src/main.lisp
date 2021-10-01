@@ -128,7 +128,7 @@
           (pseudo-hex (attributes/soc e))))
 
 (defun miner-str (e)
-  (format nil "~a ~a" (person-name/n e) (upp e)))
+  (format nil "~a, ~a" (person-name/n e) (upp e)))
 
 (define-system log-all-miners ((entity attributes))
   (format t "~a~%" (miner-str entity)))

@@ -25,46 +25,46 @@ done]
 > make install
 > miners
 Miners______________________________________________________________
-Alis Jonathon 8678AA
-Myron Lyda Ivory Cecile Winston 77586B
-Anne Eleonor Illa 93577A
-Ust 7574CB
-Harlldsharstinde 76C685
-Steve Racheal Errl 829479
-Nubia Denita 7539B7
-Santina Art 76689A
-Yo Nga 84A896
-Ice Etthan 96A663
-Amarrie Hilda 5AB96C
-Neoma Celesta Cy B58988
-Stephine Antione 625757
-Tempie Ward C76484
-Nnet Tien Anneliese Michele Kathryn 558A8B
-Avianvernce Christi Aro 976456
-Ferdinand Kathyrn B98AA7
-Zaida Idaondaliaad Claudio Monssa 974977
-Ya Kasi 699A35
-Fern Andi B7A78C
-Nnettinadrelli Sheryl Elwood Mai Patrice 26544A
-Thasan Ariaandbern Pete 8693A3
-Renala Verena 89A665
-Ani 669986
-Wi Ore Riss AA6896
-Harl 9746A6
-Angelina Alisha Athaole A595A9
-Merna Leida 36B987
-Danelle Krisanne 668667
-Ellis Era Wil Lee 878745
+Sir Margret Doalia Ja, BA67B2
+Lord Ashanti, B78A68
+女士 Denisha Rlin, 226287
+Alielo Krishna, 4765BB
+Lasharrtin Ciara IV, 856667
+Anet Carlene, 985849
+Lorinda Elia Ila Nniemarlik Hildegarde Marianna IV, 779632
+Dr. Iana Isela Rl Linwood Liss, 68B957
+Nel II, BA6A44
+Fran Va, 8A5A79
+Ntely Bennett April By, 879684
+小姐 Ur Aritrinrrienia Jr., 8AAA77
+Dr. Jacqualine Dyan, 797939
+M Brandon Merrie Kiera Augustine Esq., 728B5A
+小姐 Colleen Aracelis, 7387A9
+Lady Han Lett II, A86845
+Ris Iz Meda Emmy IV, 8BB669
+先生 Lautoncarm, 663363
+Dr. Eddy Tyron To Ossie Cris Esq., 675794
+Carrie Leoneb I, 545677
+Rivka Obdulia, 777978
+Johnlena Elle Arg Mil Kiley Dwain II, 96A573
+Atri Larae Bobbye Nidia Bbanabo Eryn IV, 6C7978
+先生 Ff Cheryll I, 597786
+Ms. Ys Clarice II, 874276
+女士 Maaneldie I, 4559C6
+Isaac Ard Leeanne Orin Jeffry I, 97B476
+Kristofer Dione, 84A885
+小姐 Andy Ama Anc, 486667
+Marta Nell Esq., 6766A8
 Asteroids___________________________________________________________
-1                                 FRE1745    -231.   -1080.    -279.
-2                            DELIWILL2908    -698.    2002.    -264.
-3                                 ERA3587     276.    1472.    -879.
-4                                  TR5114     281.   -2084.     544.
-5                             LENDEAN9611   -1995.    1044.     875.
-6                          BRAARIJOSE7506   -1240.    -378.     825.
-7                               EEHAR3177    1347.    1289.    -822.
-8                           OULYNANDR9424    1789.   -1189.     264.
-9                              MIDANI3414    1126.    1222.      29.
-10                               ACQU3362    -226.   -1494.      72.
+1                                ARRI9932    -675.    2088.     304.
+2                           AMISTILET6808       5.     882.    -760.
+3                                ADEL5911     458.   -1785.     798.
+4                            INDILAMA5436     795.    1187.     471.
+5                                  YR8503   -1257.    1644.     322.
+6                          AURELUCIAR6742   -1079.   -1698.     552.
+7                                  BO8929   -1765.    1774.     380.
+8                             ICKERIN9217    -100.   -2356.     761.
+9                            ESSIRAND5118    -665.    2162.     539.
+10                                CAR8181     987.    -959.     110.
 Thanks for using miners!
 ```
