@@ -1,5 +1,11 @@
+#+TITLE: Miners
+
+Some kind of game... probably.
+
+
 ```
 > make clean
+rm -rf miners
 > make miners
 ./build.sh
 This is SBCL 2.1.8, an implementation of ANSI Common Lisp.
@@ -23,48 +29,50 @@ writing 0 bytes from the immobile space at 0x300300000
 writing 44630016 bytes from the dynamic space at 0x7003000000
 done]
 > make install
+test -n "/Users/jacobsen/bin"  # $BINDIR
+cp miners /Users/jacobsen/bin
 > miners
 Miners______________________________________________________________
-Sir Margret Doalia Ja, BA67B2
-Lord Ashanti, B78A68
-女士 Denisha Rlin, 226287
-Alielo Krishna, 4765BB
-Lasharrtin Ciara IV, 856667
-Anet Carlene, 985849
-Lorinda Elia Ila Nniemarlik Hildegarde Marianna IV, 779632
-Dr. Iana Isela Rl Linwood Liss, 68B957
-Nel II, BA6A44
-Fran Va, 8A5A79
-Ntely Bennett April By, 879684
-小姐 Ur Aritrinrrienia Jr., 8AAA77
-Dr. Jacqualine Dyan, 797939
-M Brandon Merrie Kiera Augustine Esq., 728B5A
-小姐 Colleen Aracelis, 7387A9
-Lady Han Lett II, A86845
-Ris Iz Meda Emmy IV, 8BB669
-先生 Lautoncarm, 663363
-Dr. Eddy Tyron To Ossie Cris Esq., 675794
-Carrie Leoneb I, 545677
-Rivka Obdulia, 777978
-Johnlena Elle Arg Mil Kiley Dwain II, 96A573
-Atri Larae Bobbye Nidia Bbanabo Eryn IV, 6C7978
-先生 Ff Cheryll I, 597786
-Ms. Ys Clarice II, 874276
-女士 Maaneldie I, 4559C6
-Isaac Ard Leeanne Orin Jeffry I, 97B476
-Kristofer Dione, 84A885
-小姐 Andy Ama Anc, 486667
-Marta Nell Esq., 6766A8
+Ed Antofr, 782777
+Lurline Ond IV, 567937
+Rg Korey IV, 55444A
+Nnaul Ine, 747CB7
+Sir Ceond Temeka Nniett Esq., 8278A6
+Mx. Nnakat Lb Esq., C67CA8
+Evette Cy IV, 788875
+M Corenwicris Oh IV, 877743
+Fr. Cleveland Ronni, 878676
+Evon Nn Isha Ean Cassie Jr., 564668
+Fr. Yolande Clarita Za, 878524
+Jazmine Bobbie I, 8446CB
+先生 Kermit My IV, 4947A5
+Lord Ernalli Nett Carrol Hedy En Esq., 756A28
+Ms. Delristshermi Young Cleopatra Alma Jr., A8B869
+Dr. Qunnie Caprice I, 87B684
+Sasha Ya Kary Leah Lian Rubi II, 965A87
+Sir Im Veronica Warner Leon Shona Jr., 356788
+Love Ica I, 66C28C
+Mrs. Ris Eanrdck, 274846
+Lord Rleeian Uilli Gabriella Oscar Odag, A88CC7
+Caitlyn Ash Lael Iz Adel Leone Esq., 44626A
+Dorathy Nisha II, A67673
+Herr Earl Danette, 745A35
+女士 Jayna The Royce Braio, A47866
+M Nora Elias Brady Jr., 454774
+Sir Arisamke Gl Enola Jr., BA3788
+Miss Arli Carlille Thasher Clelia Jeanelle I, 479888
+Lady Harerna Acqu Jo Esq., BA67BA
+Dr. Derrick Jenette Ngrina, 779474
 Asteroids___________________________________________________________
-1                                ARRI9932    -675.    2088.     304.
-2                           AMISTILET6808       5.     882.    -760.
-3                                ADEL5911     458.   -1785.     798.
-4                            INDILAMA5436     795.    1187.     471.
-5                                  YR8503   -1257.    1644.     322.
-6                          AURELUCIAR6742   -1079.   -1698.     552.
-7                                  BO8929   -1765.    1774.     380.
-8                             ICKERIN9217    -100.   -2356.     761.
-9                            ESSIRAND5118    -665.    2162.     539.
-10                                CAR8181     987.    -959.     110.
+1                               LENUE5897   -1817.    1510.     630.
+2                                  VI5265    -845.    1486.     281.
+3                                  YO8483   -1542.    -254.     749.
+4                                 ONNI693     135.    -942.    -257.
+5                                 OSE7743   -1116.   -1312.    -132.
+6                                  CH9444    -991.   -2073.     131.
+7                                  ME4437     930.    -843.    -887.
+8                                INDA2109    1724.     682.     824.
+9                                ABELL638    1227.    -550.    -132.
+10                               ARYL1406    -668.    1480.     277.
 Thanks for using miners!
 ```

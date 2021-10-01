@@ -4,12 +4,14 @@ miners: src/*.lisp
 	./build.sh
 
 readme:
-	echo '```'            > README.md
+	cat README.preamble.org > README.md
+	echo '```'            >> README.md
 	echo '> make clean'   >> README.md
-	make clean
+	make clean            >> README.md
 	echo '> make miners'  >> README.md
 	make miners           >> README.md
 	echo '> make install' >> README.md
+	make install          >> README.md
 	echo '> miners'       >> README.md
 	miners                >> README.md
 	echo '```'            >> README.md
