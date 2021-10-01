@@ -172,6 +172,9 @@
         do (new-miner))
   (loop repeat 100
         do (run-aging))
+
+  (format t "Miners______________________________________________________________~%")
   (run-log-all-miners)
+  (format t "Asteroids___________________________________________________________~%")
   (run-log-all-oids)
   (format t "Thanks for using miners!~%"))
