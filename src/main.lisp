@@ -134,7 +134,7 @@
   (format t "~a~%" (miner-str entity)))
 
 (defun asteroid-str (entity)
-  (format nil "~a ~30@a ~8,0f ~8,0f ~8,0f~%"
+  (format nil "~10a ~30@a ~8,0f ~8,0f ~8,0f~%"
           (entity-id entity)
           (astroname/n entity)
           (coords/x entity)
