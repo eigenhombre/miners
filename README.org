@@ -1,0 +1,78 @@
+#+TITLE: Miners
+
+Some kind of game... probably.
+
+
+#+BEGIN_SRC
+> make clean
+rm -rf miners
+> make miners
+./build.sh
+This is SBCL 2.1.8, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+To load "miners":
+  Load 1 ASDF system:
+    miners
+; Loading "miners"
+..
+[undoing binding stack and other enclosing state... done]
+[performing final GC... done]
+[saving current Lisp image into miners:
+writing 1728 bytes from the read-only space at 0x300000000
+writing 1840 bytes from the static space at 0x300200000
+writing 0 bytes from the immobile space at 0x300300000
+writing 44630016 bytes from the dynamic space at 0x7003000000
+done]
+> make install
+test -n "/Users/jacobsen/bin"  # $BINDIR
+cp miners /Users/jacobsen/bin
+> miners
+Miners______________________________________________________________
+Lian Harl I, 757636
+Miss Har Ick III, 74B668
+Sir Bra Will Ttiengondau Ei Jamey Bradley, B969A9
+Mrs. Lind Ndrathe, AA8443
+Andi Il II, 688884
+女士 Essi IV, AA7694
+Ms. Willis Alis Maureen Tha Raisa Oh, 486945
+先生 Madonna Aldo III, 775694
+Herr Wayne Heidy Fr Paleon III, 689299
+Dr. Ud Fl Jr., 975377
+Mx. Adelaida Hri Georgeann Meghan Loreta Kareen, 9773B7
+Lidia Jong, 8A4775
+Sir Arce Iann Verna Etrose En Ck, 436B55
+先生 Indaharl Jr., 777765
+Atri Tyesha IV, 678B57
+Herr Etha Kristine II, 5C576A
+Britlaur Margy, 866695
+Mr. Idella, 56C458
+Dr. Nell Gilma Francesca Jr., 9B6698
+Mr. Tracey Abigail I, 588837
+Ce Theressa Avnaiannton Odustiste III, A73C76
+Fr. Jac IV, 885668
+Miss Bernyl Lavette, 736499
+Ron Beulah Emely Morin Esq., 788787
+Mr. Hanrianana Oren Sam Delores Cassie Kath, B85663
+Esha Tr I, 885857
+Eric Caterina Azalee, 7B8537
+Dr. Ita Yulanda, 287288
+Melvin, 94875B
+Tonisha Hilma Cath III, 464A57
+Asteroids___________________________________________________________
+1                              ORINAE1309    -222.    1567.    -198.
+2                              ESTLLA5997    -817.    -975.    -441.
+3                                AURE6678     978.     884.     553.
+4                           BETHAHCHAR673     806.    1329.     700.
+5                                  AT3087   -1923.     419.     761.
+6                                ARLI7461   -1031.   -2046.       7.
+7                              NDICOL7938   -1117.    1011.     349.
+8                       NNILLINIELASH7750     -42.   -2517.     504.
+9                                 KAT8551    1983.   -1230.     566.
+10                               ONDA4341    -518.    1444.    -100.
+Thanks for using miners!
+#+END_SRC

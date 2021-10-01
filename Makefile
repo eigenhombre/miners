@@ -4,17 +4,17 @@ miners: src/*.lisp
 	./build.sh
 
 readme:
-	cat README.preamble.org > README.md
-	echo '```'            >> README.md
-	echo '> make clean'   >> README.md
-	make clean            >> README.md
-	echo '> make miners'  >> README.md
-	make miners           >> README.md
-	echo '> make install' >> README.md
-	make install          >> README.md
-	echo '> miners'       >> README.md
-	miners                >> README.md
-	echo '```'            >> README.md
+	cat README.preamble.org > README.org
+	echo '#+BEGIN_SRC'    >> README.org
+	echo '> make clean'   >> README.org
+	make clean            >> README.org
+	echo '> make miners'  >> README.org
+	make miners           >> README.org
+	echo '> make install' >> README.org
+	make install          >> README.org
+	echo '> miners'       >> README.org
+	miners                >> README.org
+	echo '#+END_SRC'      >> README.org
 
 clean:
 	rm -rf miners
