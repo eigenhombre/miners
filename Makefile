@@ -1,6 +1,6 @@
-.PHONY: clean install readme
+.PHONY: clean install readme test
 
-miners: src/*.lisp
+miners: src/*.lisp miners.asd
 	./build.sh
 
 readme:
@@ -22,3 +22,12 @@ clean:
 install: miners
 	test -n "$(BINDIR)"  # $$BINDIR
 	cp miners ${BINDIR}
+
+test:
+	sbcl --non-interactive \
+	     --disable-debugger \
+	     --eval '(pushnew (truename ".") ql:*local-project-directories*)' \
+	     --eval '(ql:register-local-projects)' \
+	     --eval '(ql:quickload :miners)'       \
+	     --eval '(ql:quickload :miners/test)'  \
+	     --eval '(asdf:test-system :miners)'
