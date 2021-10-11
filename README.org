@@ -19,62 +19,40 @@ To load "miners":
   Load 1 ASDF system:
     miners
 ; Loading "miners"
-..................................................
-[package nominal].................................
-[package miners]...
+..
 [undoing binding stack and other enclosing state... done]
 [performing final GC... done]
 [saving current Lisp image into miners:
 writing 1728 bytes from the read-only space at 0x300000000
 writing 1840 bytes from the static space at 0x300200000
 writing 0 bytes from the immobile space at 0x300300000
-writing 44695552 bytes from the dynamic space at 0x7003000000
+writing 44630016 bytes from the dynamic space at 0x7003000000
 done]
 > make install
 test -n "/Users/jacobsen/bin"  # $BINDIR
 cp miners /Users/jacobsen/bin
 > miners
 Miners______________________________________________________________
-Mx. Diane, 287996
-Ms. Columbus Stin Cor III, 688C85
-Shayne Ich Nor Jeannine Jr., 7985A9
-夫人 Ik Amparo, 759963
-Vernell Anceren Angelena Aris Issa Dr Esq., 68987B
-Su Thanh, 666A7C
-Ffag So I, 73B2A8
-Mx. Ianahrwil Ela Jr., 6485B7
-Penny Carlita Zoe, 8463A7
-Us Juliang Esq., 264755
-Mrs. Ef Deandra Dominica II, 7B4486
-Dr. Anto Beverly II, 586A98
-Adelia Elle Hrisai Sta II, 57586C
-Sharri Ig IV, 85A479
-Millard Za Song Doemaris II, 547598
-小姐 Ain Aris Carmag I, 762987
-M Ja Br Fran, 5C5528
-Lbvoce Shonda, 853375
-Ouida Kristine Rick Marcus Benton IV, 96B567
-小姐 Krysten Sualfeli George Oniane I, 8A4AAC
-M Avaw Ill IV, 955577
-Lady Inda Cynthia, 45A776
-Annamaria Archie Ey Taylor Am Lo, 6AB64B
-Fr. Caelliei Ha III, 67585B
-Alica Latoria Douglas Donalia, 449AA8
-Charmain Giovanna Toue Cody Quecl Jr., 656BAC
-Jenni Cherarin Cherish Esha II, A69477
-Gwenda Shandra II, A73AB9
-Lady Rod Renate, 67C998
-Lenore Owen Elena Esq., B97596
-Asteroids___________________________________________________________
-1                                  AD1526   -1780.   -1055.    -399.
-2                                RENA5110   -1257.    -783.     580.
-3                                  YO9099     -36.   -1318.     462.
-4                                  EI8241    1188.   -1353.     895.
-5                                  EI3714    2243.    -645.      66.
-6                         ISHAARYMARY9365     890.    -704.     191.
-7                                  AW1213    2109.   -1358.     -39.
-8                                 LET8402     702.    2488.    -283.
-9                                NNIE4699   -1964.    1553.     356.
-10                               TEPH5441   -1699.   -1218.     199.
+Lord Stephania Nton Elis Tristan Enn Ja (7B84A9)
+Miss Pearlene (944877)
+Ms. Lli Maybelle Rand Ar Ntin IV (8684B9)
+Miss Arc Sa Kelsie (3697A9)
+Lord Shadoucda Anne III (26B57A)
+Pasquale Gr IV (552855)
+Lady Veronika Thresa Bert Van Ta Ett (787768)
+Nyla Norah Ari Tory Dieeftanlori Mellisa III (4B5655)
+Sir Rosa Ole (3B795A)
+Miss Santana Dor Connie Riserry Uel Kellie (68B374)
+Planetoids___________________________________________________________
+Planetoid MAN8420 at #<POINT (-75 823 8049) {7005CC26E3}>
+Planetoid CY1653 at #<POINT (-24 -971 -9215) {7005D785A3}>
+Planetoid LETENBRA2744 at #<POINT (-26 -224 3181) {7005D78A73}>
+Planetoid ANTOESSI1583 at #<POINT (-56 209 2332) {7005D78EA3}>
+Planetoid ELI5374 at #<POINT (4 -790 4709) {7005D792C3}>
+Planetoid WILIANDANIMA2206 at #<POINT (14 173 -7844) {7005D795E3}>
+Planetoid PEITAARITANNI3952 at #<POINT (38 -354 -2137) {7005D79A83}>
+Planetoid SI1598 at #<POINT (-10 464 9131) {7005D79F33}>
+Planetoid ILL6589 at #<POINT (-61 -486 -1139) {7005D7A253}>
+Planetoid LAUROSA7857 at #<POINT (-43 243 -6256) {7005D7A573}>
 Thanks for using miners!
 #+END_SRC
