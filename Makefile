@@ -1,4 +1,4 @@
-.PHONY: clean install readme test
+.PHONY: clean install readme test all
 
 miners: src/*.lisp miners.asd
 	./build.sh
@@ -31,3 +31,6 @@ test:
 	     --eval '(ql:quickload :miners)'       \
 	     --eval '(ql:quickload :miners/test)'  \
 	     --eval '(asdf:test-system :miners)'
+
+all:
+	make clean test miners readme install

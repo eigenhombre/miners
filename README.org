@@ -26,33 +26,35 @@ To load "miners":
 writing 1728 bytes from the read-only space at 0x300000000
 writing 1840 bytes from the static space at 0x300200000
 writing 0 bytes from the immobile space at 0x300300000
-writing 44630016 bytes from the dynamic space at 0x7003000000
+writing 44695552 bytes from the dynamic space at 0x7003000000
 done]
 > make install
 test -n "/Users/jacobsen/bin"  # $BINDIR
 cp miners /Users/jacobsen/bin
 > miners
+
 Miners______________________________________________________________
-Lord Stephania Nton Elis Tristan Enn Ja (7B84A9)
-Miss Pearlene (944877)
-Ms. Lli Maybelle Rand Ar Ntin IV (8684B9)
-Miss Arc Sa Kelsie (3697A9)
-Lord Shadoucda Anne III (26B57A)
-Pasquale Gr IV (552855)
-Lady Veronika Thresa Bert Van Ta Ett (787768)
-Nyla Norah Ari Tory Dieeftanlori Mellisa III (4B5655)
-Sir Rosa Ole (3B795A)
-Miss Santana Dor Connie Riserry Uel Kellie (68B374)
+El (87967A)
+Jenelle Ye Sti (9BA749)
+Else Melida Suzi Nettmel Esq. (498445)
+Sandee Lari Esq. (539945)
+Tia Arledan IV (944777)
+Fredricka (5984B8)
+Rlen Donya (323956)
+Sir Zachariah Lane III (78BB86)
+Cel Shayla Ola Eorg IV (449B4C)
+Herr Debora Terrell (3468A5)
+
 Planetoids___________________________________________________________
-Planetoid MAN8420 at #<POINT (-75 823 8049) {7005CC26E3}>
-Planetoid CY1653 at #<POINT (-24 -971 -9215) {7005D785A3}>
-Planetoid LETENBRA2744 at #<POINT (-26 -224 3181) {7005D78A73}>
-Planetoid ANTOESSI1583 at #<POINT (-56 209 2332) {7005D78EA3}>
-Planetoid ELI5374 at #<POINT (4 -790 4709) {7005D792C3}>
-Planetoid WILIANDANIMA2206 at #<POINT (14 173 -7844) {7005D795E3}>
-Planetoid PEITAARITANNI3952 at #<POINT (38 -354 -2137) {7005D79A83}>
-Planetoid SI1598 at #<POINT (-10 464 9131) {7005D79F33}>
-Planetoid ILL6589 at #<POINT (-61 -486 -1139) {7005D7A253}>
-Planetoid LAUROSA7857 at #<POINT (-43 243 -6256) {7005D7A573}>
+Planetoid JEANKE1246 at (-9 -174 3495)
+Planetoid RRIE5514 at (-20 -715 -156)
+Planetoid BET7496 at (-64 -947 -9655)
+Planetoid STE4793 at (-100 -949 -2001)
+Planetoid AI1876 at (-3 251 5084)
+Planetoid EP6240 at (-96 -591 -5084)
+Planetoid EARL7375 at (54 -451 -2161)
+Planetoid SANC291 at (-13 588 -1200)
+Planetoid CK2671 at (-64 358 1637)
+Planetoid SA5044 at (-45 493 -8443)
 Thanks for using miners!
 #+END_SRC

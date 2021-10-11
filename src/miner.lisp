@@ -39,13 +39,6 @@
                                         (education m)
                                         (social-standing m)))))
 
-(defun miner-repr (stream m)
-  (format stream "~a (~a)" (name m) (upp m)))
-
-(defmethod print-object ((m miner) stream)
-  (print-unreadable-object (m stream :type t :identity t)
-    (miner-repr stream m)))
-
 (defun new-miner (name-gen-fn)
   (make-instance 'miner
                  :name (funcall name-gen-fn)
@@ -55,3 +48,5 @@
                  :intelligence (d2.6)
                  :education (d2.6)
                  :social-standing (d2.6)))
+
+(print-as miner m "~a (~a)" (name m) (upp m))

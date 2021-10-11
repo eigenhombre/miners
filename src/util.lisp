@@ -18,7 +18,13 @@
   Make printable representation of an object `obj` of type `type` via
   a `format` expression.
   "
-  (let ((stream-sym (gensym)))
-    `(defmethod print-object ((,obj ,type) ,stream-sym)
-       (print-unreadable-object (,obj ,stream-sym :type t :identity t)
-         (format ,stream-sym ,@format-args)))))
+  (let ((stream-sym (gensym))
+        (rep-fn-sym (intern (concatenate 'string
+                                         (symbol-name type)
+                                         "-REPR"))))
+    `(progn
+       (defun ,rep-fn-sym (,obj)
+         (format nil ,@format-args))
+       (defmethod print-object ((,obj ,type) ,stream-sym)
+         (print-unreadable-object (,obj ,stream-sym :type t :identity t)
+           (format ,stream-sym ,@format-args))))))
