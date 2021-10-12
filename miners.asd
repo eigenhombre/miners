@@ -9,17 +9,24 @@
   :components ((:module "src"
                 :serial t
                 :components ((:file "package")
+                             (:file "id")
                              (:file "names")
                              (:file "random")
                              (:file "util")
+                             (:file "geom")
                              (:file "point" :depends-on ("util"
                                                          "random"))
-                             (:file "miner" :depends-on ("util"
-                                                         "point"
-                                                         "random"))
-                             (:file "planetoid" :depends-on ("util"
+                             (:file "planetoid" :depends-on ("id"
+                                                             "util"
+                                                             "geom"
                                                              "point"))
-                             (:file "geom")
+                             (:file "trip" :depends-on ("geom"
+                                                        "point"
+                                                        "planetoid"))
+                             (:file "miner" :depends-on ("random"
+                                                         "id"
+                                                         "util"
+                                                         "trip"))
                              (:file "main" :depends-on ("package"
                                                         "random"
                                                         "names"

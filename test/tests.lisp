@@ -21,19 +21,37 @@
         (is (cl-oju:pos? (length (miners:miner-repr m)))))))
   (testing "Make ten of 'em just to be sure"
     (loop repeat 10
-          do (print (miners:new-miner
-                     #'nominal:full-name-as-str)))))
+          do (format t "~a~%" (miner-repr (miners:new-miner
+                                           #'nominal:full-name-as-str))))))
 
+(defun planetoid-for-test ()
+  (miners:new-planetoid #'(lambda ()
+                            (miners::rand-annulus-xyz miners::+inner-radius-ls+
+                                                      miners::+outer-radius-ls+))
+                        #'miners:astroname))
 (test planetoids-test
   (testing "Making a new planetoid"
-    (let ((p (miners:new-planetoid #'miners:rand-point
-                                   #'miners:astroname)))
+    (let ((p (planetoid-for-test)))
       (testing "It has a location"
         (is (equal 'miners:point (type-of (miners:coords p)))))
       (testing "It has a name"
         (is (name p)))))
   (testing "Generate ten of them"
     (loop repeat 10
-          do (print (miners:new-planetoid
-                     #'rand-point
-                     #'miners:astroname)))))
+          do (format t "~a~%" (miners::planetoid-repr
+                               (planetoid-for-test))))))
+
+(test middle-test
+  (is (equalp '(0.5 0 0)
+              (miners::middle '(0 0 0) '(1 0 0))))
+  (is (equalp '(0 0 0.5)
+              (miners::middle '(0 0 0) '(0 0 1))))
+  (is (equalp '(0.5 0.5 0.5)
+              (miners::middle '(0 0 0) '(1 1 1)))))
+
+(test trip-test
+  (testing "Making a new trip"
+    (loop repeat 20 do
+      (let ((pa (planetoid-for-test))
+            (pb (planetoid-for-test)))
+        (format t "~a~%" (miners::trip-repr (miners::new-trip pa pb)))))))
