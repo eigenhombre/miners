@@ -34,30 +34,30 @@ cp miners /Users/jacobsen/bin
 > miners
 
 Miners_______________________________________________________________
-Shoshana Ighel III (1, 486578)
-小姐 Lanora Joan Yanira (2, 659349)
-Aure Ica (3, 947AB6)
-Iseorriyo Denae IV (4, 69A95B)
-Ying Collen I (5, 967976)
-Brittany Ef Anto Iona Fr IV (6, 878A46)
-Cinda Ele (7, 797328)
-Fr. Denita Dorcas (8, 7C637A)
-Dr. Kelvin Darron Rosuicaro Rettcarl Aniebrilettttie Hell Jr. (9, 46A688)
-Samual Lorinda Dexter III (10, B77787)
+Miss Dotty Mae Ka As (1, A3B586)
+Irving Madie Corrine (2, 98C839)
+Luci Vashti (3, 8786A3)
+Elaay Donnetta Lian Gaye Les Sitan IV (4, 57C266)
+Herr Tula (5, 63554B)
+Cl Rodrigo Will Bess IV (6, 997896)
+Breanna Etta Jacqmary Esq. (7, 446664)
+Larry Han (8, 9995B7)
+Asha Ff Anto Mariette Ol (9, 465595)
+Lian Tresa Wiang Robbi III (10, 73A798)
 
 Planetoids (subset)__________________________________________________
-Planetoid BI1280(11) at (-963.9 1298.7 404.1)
-Planetoid GIILLACQU7402(12) at (-144.0 1433.6 -692.5)
-Planetoid IT1737(13) at (1217.7 -306.1 -359.6)
-Planetoid MICH8023(14) at (-1678.5 464.6 161.3)
-Planetoid RC8050(15) at (-304.9 1254.3 550.8)
-Planetoid ANIEGI1423(16) at (1578.8 -157.9 -209.3)
-Planetoid IL5037(17) at (-1003.7 -1745.2 -787.0)
-Planetoid INALAND8500(18) at (723.5 -364.5 -568.4)
-Planetoid ATRIBIONIERI9963(19) at (766.7 1098.8 301.4)
-Planetoid ERTCE69(20) at (430.4 -1910.5 -49.6)
+Planetoid KATH3500(11) at (2132.3 1144.8 739.0)
+Planetoid GERDOR4444(12) at (1190.6 1460.1 -812.8)
+Planetoid KO5308(13) at (1108.8 -1474.6 546.9)
+Planetoid STEP8712(14) at (-469.8 -1197.8 -159.8)
+Planetoid RIANSHAN2669(15) at (2393.8 287.9 -478.3)
+Planetoid GER9333(16) at (2519.5 -154.3 -181.9)
+Planetoid RY4096(17) at (179.5 2282.5 -642.8)
+Planetoid ESKARKAT7885(18) at (-1747.3 -532.6 811.7)
+Planetoid MONICKORRIRAANE4279(19) at (603.9 1638.5 -688.0)
+Planetoid AVEANN5138(20) at (1980.8 -1091.5 167.9)
 
-Ten asteroid miners want to visit twenty thousand three hundred ten planetoids.
+Ten asteroid miners want to visit sixty-seven thousand eight hundred thirty-two planetoids.
 
 1 seconds have elapsed.
 3 seconds have elapsed.
@@ -75,22 +75,36 @@ Ten asteroid miners want to visit twenty thousand three hundred ten planetoids.
 136,440 seconds have elapsed.
 275,880 seconds have elapsed.
 554,760 seconds have elapsed.
-Cinda Ele departs from ANEL7655 to RLE8132, a distance of 3,555 light seconds.
+Cl Rodrigo Will Bess IV departs from ORRI532 to CI650, a distance of 3,406 light seconds.
 1,112,520 seconds have elapsed.
-Samual Lorinda Dexter III departs from USTINET3638 to OBAUR9533, a distance of 4,405 light seconds.
+Asha Ff Anto Mariette Ol departs from ELIS9067 to DEAN3927, a distance of 3,133 light seconds.
 2,228,040 seconds have elapsed.
-Dr. Kelvin Darron Rosuicaro Rettcarl Aniebrilettttie Hell Jr. departs from ANN8798 to RETSC5582, a distance of 3,136 light seconds.
-Iseorriyo Denae IV departs from ROSE6355 to RRYIND4894, a distance of 2,909 light seconds.
-Ying Collen I departs from ARLECARO8163 to TO8375, a distance of 3,354 light seconds.
+Asha Ff Anto Mariette Ol departs from RETTBR7557 to ARC6430, a distance of 3,787 light seconds.
+Irving Madie Corrine departs from AL9563 to YL9166, a distance of 3,913 light seconds.
+Elaay Donnetta Lian Gaye Les Sitan IV departs from ENELE2433 to ANT8023, a distance of 964 light seconds.
 4,459,080 seconds have elapsed.
-Aure Ica departs from RC765 to OE8867, a distance of 3,581 light seconds.
-小姐 Lanora Joan Yanira departs from ELLENIE1188 to BRJAN876, a distance of 1,025 light seconds.
+Lian Tresa Wiang Robbi III departs from LINE6728 to TINSHERR274, a distance of 2,773 light seconds.
+Herr Tula departs from ESSLINDOM4757 to NELL8936, a distance of 4,157 light seconds.
+Elaay Donnetta Lian Gaye Les Sitan IV departs from KE3343 to LLAALIA7697, a distance of 3,047 light seconds.
+Miss Dotty Mae Ka As departs from NET9603 to FF708, a distance of 3,003 light seconds.
+Elaay Donnetta Lian Gaye Les Sitan IV departs from ANC7247 to COR6982, a distance of 3,269 light seconds.
+Luci Vashti departs from RM3335 to RICKLYNN1154, a distance of 2,458 light seconds.
 8,921,160 seconds have elapsed.
-Brittany Ef Anto Iona Fr IV departs from RONDANI3866 to HR9210, a distance of 3,866 light seconds.
+Irving Madie Corrine departs from AMA6228 to ANCE7460, a distance of 2,005 light seconds.
+Herr Tula departs from DAN8853 to WI4, a distance of 3,364 light seconds.
+Irving Madie Corrine departs from ELYN9697 to VAHONETTBRANCE4613, a distance of 954 light seconds.
+Cl Rodrigo Will Bess IV departs from RENADA1185 to SHAR5136, a distance of 2,902 light seconds.
+Herr Tula departs from ERN3843 to HARLI5442, a distance of 2,671 light seconds.
+Cl Rodrigo Will Bess IV departs from LAR7895 to SHI3902, a distance of 3,094 light seconds.
+Larry Han departs from ENNINA3338 to UD7836, a distance of 3,255 light seconds.
+Herr Tula departs from ERRI8128 to SAN7002, a distance of 2,543 light seconds.
+Asha Ff Anto Mariette Ol departs from ARA2395 to RY1922, a distance of 3,374 light seconds.
+Asha Ff Anto Mariette Ol departs from NDR4250 to ARIS4769, a distance of 1,707 light seconds.
+Breanna Etta Jacqmary Esq. departs from BETHESTECHE7438 to IOMYRLEEREN4863, a distance of 1,667 light seconds.
+Breanna Etta Jacqmary Esq. departs from RLLYES3613 to AINUE2671, a distance of 3,025 light seconds.
 17,845,320 seconds have elapsed.
-Fr. Denita Dorcas departs from USIC3322 to VEANET2888, a distance of 4,254 light seconds.
-Shoshana Ighel III departs from HELDEN9633 to ENIA3966, a distance of 3,049 light seconds.
-35,693,640 seconds have elapsed.
-71,390,280 seconds have elapsed.
+Elaay Donnetta Lian Gaye Les Sitan IV departs from IANAANEL5321 to YE3282, a distance of 2,059 light seconds.
+Herr Tula departs from EY1588 to RLEE746, a distance of 4,039 light seconds.
+Irving Madie Corrine departs from ELO7903 to BE5851, a distance of 3,642 light seconds.
 Thanks for using miners!
 #+END_SRC

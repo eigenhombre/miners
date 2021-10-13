@@ -29,21 +29,25 @@
           (length +all-planetoids+))
 
   ;; Main loop
-  (loop for i from 0 to 100000000
-        with p = (perd)
-        do (progn
-             (when (funcall p)
-               (format t "~:d seconds have elapsed.~%" i))
-             (when (< (random 1.0) 1E-6)
-               (let ((m (rand-nth +all-miners+)))
-                 (if (null (current-trip m))
-                     (let* ((p0 (rand-nth +all-planetoids+))
-                            (p1 (rand-nth +all-planetoids+))
-                            (tr (new-trip p0 p1)))
-                       (setf (current-trip m) tr)
-                       (format t "~a departs from ~a to ~a, a distance of ~:d light seconds.~%"
-                               (name m)
-                               (name p0)
-                               (name p1)
-                               (round (trip-distance tr)))))))))
+  (let ((should-update? (updater 1.8)))
+    (loop for i from 0 to 20000000
+          with p = (perd)
+          do (progn
+               (when (funcall p)
+                 (format t "~:d seconds have elapsed.~%" i))
+               (when (< (random 1.0) 1E-3)
+                 (let ((m (rand-nth +all-miners+)))
+                   ;; FIXME: Turn back on this check once trips complete:
+                   (if t ;; (null (current-trip m))
+                       (let* ((p0 (rand-nth +all-planetoids+))
+                              (p1 (rand-nth +all-planetoids+))
+                              (tr (new-trip p0 p1)))
+                         (setf (current-trip m) tr)
+                         (when (funcall should-update?)
+                           ;; FIXME: Vary this language:
+                           (format t "~a departs from ~a to ~a, a distance of ~:d light seconds.~%"
+                                   (name m)
+                                   (name p0)
+                                   (name p1)
+                                   (round (trip-distance tr)))))))))))
   (format t "Thanks for using miners!~%"))
