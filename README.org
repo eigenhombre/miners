@@ -34,30 +34,30 @@ cp miners /Users/jacobsen/bin
 > miners
 
 Miners_______________________________________________________________
-Dr. Enni Ritlyleen Many I (1, 455738)
-Mr. Arylirindangel Arismic (2, B65C84)
-Bbjean Lan Eddy Esq. (3, 955875)
-Lorrine Rene IV (4, B77884)
-Rr Nn IV (5, 73A324)
-Sunshine Micheal (6, 7A74A5)
-Shyla Simonne I (7, C457A8)
-Debrah Edwardo (8, 475A7C)
-Su (9, 878A76)
-Miss Jesse Mose Shel Arle Aure (10, 788982)
+Shoshana Ighel III (1, 486578)
+小姐 Lanora Joan Yanira (2, 659349)
+Aure Ica (3, 947AB6)
+Iseorriyo Denae IV (4, 69A95B)
+Ying Collen I (5, 967976)
+Brittany Ef Anto Iona Fr IV (6, 878A46)
+Cinda Ele (7, 797328)
+Fr. Denita Dorcas (8, 7C637A)
+Dr. Kelvin Darron Rosuicaro Rettcarl Aniebrilettttie Hell Jr. (9, 46A688)
+Samual Lorinda Dexter III (10, B77787)
 
 Planetoids (subset)__________________________________________________
-Planetoid BE10(11) at (-2486.3 591.5 -139.0)
-Planetoid SHEERI7220(12) at (-1603.0 1828.3 -53.1)
-Planetoid OL8694(13) at (1375.3 911.6 623.7)
-Planetoid BOARCE1174(14) at (-294.3 1509.8 280.2)
-Planetoid ECRANDETTANDR3377(15) at (-134.2 1195.9 -799.4)
-Planetoid MAR858(16) at (-1001.0 1457.1 393.1)
-Planetoid QUE2252(17) at (-1732.4 -845.1 596.9)
-Planetoid IAN1528(18) at (-1325.3 -932.5 695.5)
-Planetoid LINE8175(19) at (-425.0 2553.7 366.3)
-Planetoid EDMARGKATH5679(20) at (-1516.8 77.9 804.3)
+Planetoid BI1280(11) at (-963.9 1298.7 404.1)
+Planetoid GIILLACQU7402(12) at (-144.0 1433.6 -692.5)
+Planetoid IT1737(13) at (1217.7 -306.1 -359.6)
+Planetoid MICH8023(14) at (-1678.5 464.6 161.3)
+Planetoid RC8050(15) at (-304.9 1254.3 550.8)
+Planetoid ANIEGI1423(16) at (1578.8 -157.9 -209.3)
+Planetoid IL5037(17) at (-1003.7 -1745.2 -787.0)
+Planetoid INALAND8500(18) at (723.5 -364.5 -568.4)
+Planetoid ATRIBIONIERI9963(19) at (766.7 1098.8 301.4)
+Planetoid ERTCE69(20) at (430.4 -1910.5 -49.6)
 
-Ten asteroid miners want to visit sixty-four thousand seven hundred sixty-five planetoids.
+Ten asteroid miners want to visit twenty thousand three hundred ten planetoids.
 
 1 seconds have elapsed.
 3 seconds have elapsed.
@@ -75,21 +75,21 @@ Ten asteroid miners want to visit sixty-four thousand seven hundred sixty-five p
 136,440 seconds have elapsed.
 275,880 seconds have elapsed.
 554,760 seconds have elapsed.
+Cinda Ele departs from ANEL7655 to RLE8132, a distance of 3,555 light seconds.
 1,112,520 seconds have elapsed.
+Samual Lorinda Dexter III departs from USTINET3638 to OBAUR9533, a distance of 4,405 light seconds.
 2,228,040 seconds have elapsed.
-Lorrine Rene IV departs from TON2249 to SCESTIDA2924, a distance of 1,981 light seconds.
-Miss Jesse Mose Shel Arle Aure departs from URCHRILORIOH254 to ARCE491, a distance of 1,121 light seconds.
+Dr. Kelvin Darron Rosuicaro Rettcarl Aniebrilettttie Hell Jr. departs from ANN8798 to RETSC5582, a distance of 3,136 light seconds.
+Iseorriyo Denae IV departs from ROSE6355 to RRYIND4894, a distance of 2,909 light seconds.
+Ying Collen I departs from ARLECARO8163 to TO8375, a distance of 3,354 light seconds.
 4,459,080 seconds have elapsed.
-Rr Nn IV departs from SHAN5913 to ALIN1423, a distance of 1,408 light seconds.
-Su departs from FREDTHANSU2251 to ANCE577, a distance of 4,241 light seconds.
-Mr. Arylirindangel Arismic departs from GARBERT6022 to ELINISHOEYNTIN1180, a distance of 2,170 light seconds.
+Aure Ica departs from RC765 to OE8867, a distance of 3,581 light seconds.
+小姐 Lanora Joan Yanira departs from ELLENIE1188 to BRJAN876, a distance of 1,025 light seconds.
 8,921,160 seconds have elapsed.
-Sunshine Micheal departs from GARSTEP1879 to UCDYEDAE2902, a distance of 1,468 light seconds.
-Dr. Enni Ritlyleen Many I departs from DYSHAN4799 to TTAMIL1379, a distance of 4,531 light seconds.
-Debrah Edwardo departs from BYELYN9856 to NCE9249, a distance of 2,677 light seconds.
-Shyla Simonne I departs from HANN8183 to UEL4289, a distance of 3,019 light seconds.
+Brittany Ef Anto Iona Fr IV departs from RONDANI3866 to HR9210, a distance of 3,866 light seconds.
 17,845,320 seconds have elapsed.
-Bbjean Lan Eddy Esq. departs from VEAGERNA5717 to KR7969, a distance of 843 light seconds.
+Fr. Denita Dorcas departs from USIC3322 to VEANET2888, a distance of 4,254 light seconds.
+Shoshana Ighel III departs from HELDEN9633 to ENIA3966, a distance of 3,049 light seconds.
 35,693,640 seconds have elapsed.
 71,390,280 seconds have elapsed.
 Thanks for using miners!

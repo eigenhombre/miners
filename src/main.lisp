@@ -3,23 +3,6 @@
 (defvar +all-miners+)
 (defvar +all-planetoids+)
 
-(defun nextnext (n)
-  (cond
-    ((< n 10) (1+ n))
-    ((< n 1000) (* 2 n))
-    ((> n 3000) (+ n 3000))
-    (t (* 100 (floor (/ (* 1.2 n) 100))))))
-
-(defun perd ()
-  (let ((counter 0)
-        (next 1))
-    (lambda ()
-      (let ((fire? (equal counter next)))
-        (incf counter)
-        (when fire?
-          (incf next (nextnext next)))
-        fire?))))
-
 (defun main ()
   (init-random-number-generator)
   (setq +all-miners+ (loop repeat 10
