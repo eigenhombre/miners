@@ -41,7 +41,8 @@
     :initarg :social-standing)
    (current-trip
     :accessor current-trip
-    :type trip)))
+    :type trip
+    :initform nil)))
 
 (defun upp (m)
   (format nil "~{~a~}"

@@ -27,9 +27,12 @@
                    :destination destination
                    :midpoint mp)))
 
+(defun trip-distance (tr)
+  (norm (vminus (as-list (coords (origin tr)))
+                (as-list (coords (destination tr))))))
+
 (print-as trip tr "TRIP ~a (~a -> ~a, ~,2f light seconds)"
           (id tr)
           (name (origin tr))
           (name (destination tr))
-          (norm (vminus (as-list (coords (origin tr)))
-                        (as-list (coords (destination tr))))))
+          (trip-distance tr))
