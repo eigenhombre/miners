@@ -41,7 +41,7 @@
                    (planetoid-repr p)))
 
   (format t
-          "~%~@(~r~) asteroid miners want to visit ~r planetoids~%~%"
+          "~%~@(~r~) asteroid miners want to visit ~r planetoids.~%~%"
           (length +all-miners+)
           (length +all-planetoids+))
 
@@ -50,7 +50,7 @@
         with p = (perd)
         do (progn
              (when (funcall p)
-               (format t "~a seconds have elapsed~%" i))
+               (format t "~:d seconds have elapsed.~%" i))
              (when (< (random 1.0) 1E-6)
                (let ((m (rand-nth +all-miners+)))
                  (if (null (current-trip m))
@@ -58,7 +58,7 @@
                             (p1 (rand-nth +all-planetoids+))
                             (tr (new-trip p0 p1)))
                        (setf (current-trip m) tr)
-                       (format t "~a departs from ~a to ~a, a distance of ~a light seconds.~%"
+                       (format t "~a departs from ~a to ~a, a distance of ~:d light seconds.~%"
                                (name m)
                                (name p0)
                                (name p1)

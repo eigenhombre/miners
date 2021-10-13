@@ -34,63 +34,63 @@ cp miners /Users/jacobsen/bin
 > miners
 
 Miners_______________________________________________________________
-Mx. Louisa Rl (1, 886A58)
-Mr. Amfeliwe (2, B67875)
-Mx. Jane Ninfa Arliissaama Lesia Lester IV (3, 875363)
-Mr. Krysten Ol Esq. (4, 857A67)
-Rle Rocio Young IV (5, 973386)
-Dr. Travis Ev Iel Sti (6, 639779)
-Elen IV (7, 968B74)
-Ming Ern Carfa Lawana Osefemarg II (8, CC6779)
-Dr. Riss Ashely Alaina (9, 976774)
-Mx. Lyfreeyjohnca Qu Bra Michiko Caryl Esq. (10, 869A75)
+Dr. Enni Ritlyleen Many I (1, 455738)
+Mr. Arylirindangel Arismic (2, B65C84)
+Bbjean Lan Eddy Esq. (3, 955875)
+Lorrine Rene IV (4, B77884)
+Rr Nn IV (5, 73A324)
+Sunshine Micheal (6, 7A74A5)
+Shyla Simonne I (7, C457A8)
+Debrah Edwardo (8, 475A7C)
+Su (9, 878A76)
+Miss Jesse Mose Shel Arle Aure (10, 788982)
 
 Planetoids (subset)__________________________________________________
-Planetoid NNKATHASHA3338(11) at (947.6 -1664.8 486.4)
-Planetoid ND8691(12) at (-214.2 1608.8 500.3)
-Planetoid SHERNIC1837(13) at (-1925.4 1021.7 -615.2)
-Planetoid IR7168(14) at (1316.7 -2221.8 -677.1)
-Planetoid LIS48(15) at (698.5 1341.9 -824.1)
-Planetoid ILLI6988(16) at (-1265.7 1008.2 428.3)
-Planetoid NEL2058(17) at (-1397.8 -1828.6 -522.4)
-Planetoid ENIA291(18) at (-256.4 -1866.9 78.0)
-Planetoid NDIADERIN3041(19) at (-1071.5 1235.1 -682.5)
-Planetoid RANDESSIILIDAHE7717(20) at (696.6 -906.8 -734.5)
+Planetoid BE10(11) at (-2486.3 591.5 -139.0)
+Planetoid SHEERI7220(12) at (-1603.0 1828.3 -53.1)
+Planetoid OL8694(13) at (1375.3 911.6 623.7)
+Planetoid BOARCE1174(14) at (-294.3 1509.8 280.2)
+Planetoid ECRANDETTANDR3377(15) at (-134.2 1195.9 -799.4)
+Planetoid MAR858(16) at (-1001.0 1457.1 393.1)
+Planetoid QUE2252(17) at (-1732.4 -845.1 596.9)
+Planetoid IAN1528(18) at (-1325.3 -932.5 695.5)
+Planetoid LINE8175(19) at (-425.0 2553.7 366.3)
+Planetoid EDMARGKATH5679(20) at (-1516.8 77.9 804.3)
 
-Ten asteroid miners want to visit eighty-eight thousand eighteen planetoids
+Ten asteroid miners want to visit sixty-four thousand seven hundred sixty-five planetoids.
 
-1 seconds have elapsed
-3 seconds have elapsed
-7 seconds have elapsed
-15 seconds have elapsed
-45 seconds have elapsed
-135 seconds have elapsed
-405 seconds have elapsed
-1215 seconds have elapsed
-2615 seconds have elapsed
-5715 seconds have elapsed
-14430 seconds have elapsed
-31860 seconds have elapsed
-66720 seconds have elapsed
-136440 seconds have elapsed
-275880 seconds have elapsed
-554760 seconds have elapsed
-1112520 seconds have elapsed
-2228040 seconds have elapsed
-Rle Rocio Young IV departs from IANN1470 to LENLE1658, a distance of 3131 light seconds.
-Mr. Krysten Ol Esq. departs from JOSENETT6407 to IAALIA1946, a distance of 1335 light seconds.
-Mx. Jane Ninfa Arliissaama Lesia Lester IV departs from ARCE1184 to JANAMARGUST7626, a distance of 2032 light seconds.
-4459080 seconds have elapsed
-Elen IV departs from BET1832 to RITADELLGEOR3117, a distance of 1934 light seconds.
-Mr. Amfeliwe departs from SY5625 to THAKATH1103, a distance of 4173 light seconds.
-Mx. Lyfreeyjohnca Qu Bra Michiko Caryl Esq. departs from ELIELI2053 to OD6348, a distance of 617 light seconds.
-8921160 seconds have elapsed
-Dr. Riss Ashely Alaina departs from TY6926 to ARR4668, a distance of 2995 light seconds.
-Mx. Louisa Rl departs from HRHOLDRN1038 to VERN8454, a distance of 2772 light seconds.
-Dr. Travis Ev Iel Sti departs from RENC4681 to ENNIENCEHERIEO8238, a distance of 1270 light seconds.
-17845320 seconds have elapsed
-Ming Ern Carfa Lawana Osefemarg II departs from DRMA5500 to OH3394, a distance of 3482 light seconds.
-35693640 seconds have elapsed
-71390280 seconds have elapsed
+1 seconds have elapsed.
+3 seconds have elapsed.
+7 seconds have elapsed.
+15 seconds have elapsed.
+45 seconds have elapsed.
+135 seconds have elapsed.
+405 seconds have elapsed.
+1,215 seconds have elapsed.
+2,615 seconds have elapsed.
+5,715 seconds have elapsed.
+14,430 seconds have elapsed.
+31,860 seconds have elapsed.
+66,720 seconds have elapsed.
+136,440 seconds have elapsed.
+275,880 seconds have elapsed.
+554,760 seconds have elapsed.
+1,112,520 seconds have elapsed.
+2,228,040 seconds have elapsed.
+Lorrine Rene IV departs from TON2249 to SCESTIDA2924, a distance of 1,981 light seconds.
+Miss Jesse Mose Shel Arle Aure departs from URCHRILORIOH254 to ARCE491, a distance of 1,121 light seconds.
+4,459,080 seconds have elapsed.
+Rr Nn IV departs from SHAN5913 to ALIN1423, a distance of 1,408 light seconds.
+Su departs from FREDTHANSU2251 to ANCE577, a distance of 4,241 light seconds.
+Mr. Arylirindangel Arismic departs from GARBERT6022 to ELINISHOEYNTIN1180, a distance of 2,170 light seconds.
+8,921,160 seconds have elapsed.
+Sunshine Micheal departs from GARSTEP1879 to UCDYEDAE2902, a distance of 1,468 light seconds.
+Dr. Enni Ritlyleen Many I departs from DYSHAN4799 to TTAMIL1379, a distance of 4,531 light seconds.
+Debrah Edwardo departs from BYELYN9856 to NCE9249, a distance of 2,677 light seconds.
+Shyla Simonne I departs from HANN8183 to UEL4289, a distance of 3,019 light seconds.
+17,845,320 seconds have elapsed.
+Bbjean Lan Eddy Esq. departs from VEAGERNA5717 to KR7969, a distance of 843 light seconds.
+35,693,640 seconds have elapsed.
+71,390,280 seconds have elapsed.
 Thanks for using miners!
 #+END_SRC
