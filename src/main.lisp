@@ -3,17 +3,37 @@
 (defvar +all-miners+)
 (defvar +all-planetoids+)
 
+(defun comma (x)
+  (format nil "~a," x))
+
+(defun period (x)
+  (format nil "~a." x))
+
+(defun lower-sym (s)
+  (if (symbolp s) (format nil "~(~a~)" s) s))
+
+(defun alts (&rest args)
+  (nth (random (length args)) args))
+
 (defun add-trip (m)
   (let* ((p0 (rand-nth +all-planetoids+))
          (p1 (rand-nth +all-planetoids+))
          (tr (new-trip p0 p1)))
     (setf (current-trip m) tr)
-    ;; FIXME: Vary this language:
-    (format t "~a departs from ~a to ~a, a distance of ~:d light seconds.~%"
-            (name m)
-            (name p0)
-            (name p1)
-            (round (trip-distance tr)))))
+    (format t "~a~%"
+            (string-join-space
+             (mapcar #'lower-sym
+                     (alts `(,(name m) departs from ,(name p0) to ,(comma (name p1)) a distance
+                             of ,(round (trip-distance tr)) light seconds.)
+                           `(,(name m) leaves from ,(name p0) to ,(comma (name p1)) a distance
+                             of ,(round (trip-distance tr)) light seconds.)
+                           `(,(name m) starts traveling to ,(name p1) from ,(comma (name p0))
+                             beginning a voyage
+                             of ,(round (trip-distance tr)) light seconds.)
+                           `(,(name m) begins a voyage of ,(round (trip-distance tr))
+                             light ,(comma "seconds")
+                             from ,(name p0)
+                             to ,(period (name p1)))))))))
 
 (defun duration-str (numsec)
   (cond
