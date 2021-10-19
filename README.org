@@ -26,7 +26,7 @@ To load "miners":
 writing 1728 bytes from the read-only space at 0x300000000
 writing 1840 bytes from the static space at 0x300200000
 writing 0 bytes from the immobile space at 0x300300000
-writing 44761088 bytes from the dynamic space at 0x7003000000
+writing 44826624 bytes from the dynamic space at 0x7003000000
 done]
 > make install
 test -n "/Users/jacobsen/bin"  # $BINDIR
@@ -34,30 +34,30 @@ cp miners /Users/jacobsen/bin
 > miners
 
 Miners_______________________________________________________________
-Oley Rene Augustine Esq. (1, 797A63)
-Fr. Maire Katherina (2, 897A75)
-Mx. Jodee Maryln Ria Bern Mi Raphael (3, 7B7B67)
-Ms. Aleida Us (4, 9655A8)
-Hel Do Randolph Bo Ore (5, 499356)
-Fr. Carl Jacquelynn Ag (6, 987C73)
-先生 Hiami Katie III (7, 2796A7)
-Ms. Dan Qu Ei Jonah Juliette (8, 6783A6)
-Fr. Deborah Co Esq. (9, 9564A8)
-Nda Ze Shemeka Esq. (10, 455755)
+Fr. To Este Agustin Elizbeth II (1, 756893)
+Idgerchri Deidra Ath Ichmon (2, 8838A8)
+Fr. Manuela (3, 788845)
+Miss Jimmie Florrie Elmo (4, 778466)
+Briana Erndorainechrlb (5, 947A87)
+Anto Ck (6, 627499)
+Olinda Wanda (7, A99753)
+Ginette Adjacq Ell (8, 74538A)
+Fr. Meearl (9, 956745)
+Lady Nge Ianmm Edris Rl (10, 8747C7)
 
 Planetoids (subset)__________________________________________________
-Planetoid LEONANETCHER9409(11) at (1189.9 -284.2 -713.3)
-Planetoid ARIE1142(12) at (-2383.4 814.8 545.9)
-Planetoid DA3952(13) at (-2035.1 1180.0 89.2)
-Planetoid VO7223(14) at (-684.7 1632.6 441.8)
-Planetoid WASHERAMI154(15) at (1447.1 1685.1 351.4)
-Planetoid LAR5746(16) at (-1444.0 -984.9 -570.7)
-Planetoid OT7544(17) at (785.0 2309.5 173.1)
-Planetoid ERR6252(18) at (-250.0 -2215.8 -502.8)
-Planetoid OLA5857(19) at (-1992.9 -507.0 285.8)
-Planetoid ELIN5510(20) at (-1607.9 -1326.4 229.4)
+Planetoid CHA7231(11) at (1378.1 318.9 -662.3)
+Planetoid ISESTEP2441(12) at (1871.8 916.2 539.5)
+Planetoid ATRIANDR6908(13) at (-822.8 -1959.1 623.7)
+Planetoid ELIN8868(14) at (1794.9 947.3 916.7)
+Planetoid DO9348(15) at (-1273.1 -309.5 803.9)
+Planetoid DAR5706(16) at (631.0 -948.5 -337.8)
+Planetoid RIEL6537(17) at (1220.2 -2017.6 54.5)
+Planetoid ID4397(18) at (-2004.0 755.3 508.0)
+Planetoid AROGENECARO2035(19) at (-99.1 -1110.7 -645.7)
+Planetoid ROSA4548(20) at (-72.3 1323.8 -870.0)
 
-Ten asteroid miners want to visit two thousand two hundred fifty-six planetoids.
+Ten asteroid miners want to visit forty-eight thousand four hundred eighty-seven planetoids.
 
 1 second have elapsed, with zero trips in flight.
 3 seconds have elapsed, with zero trips in flight.
@@ -75,27 +75,28 @@ Ten asteroid miners want to visit two thousand two hundred fifty-six planetoids.
 2 days have elapsed, with zero trips in flight.
 3 days have elapsed, with zero trips in flight.
 6 days have elapsed, with zero trips in flight.
-Nda Ze Shemeka Esq. departs from ISHA7486 to ORE9578, a distance of 858 light seconds.
-Nda Ze Shemeka Esq. arrived at ORE9578 after 4 days of travel!
-13 days have elapsed, with zero trips in flight.
-Nda Ze Shemeka Esq. departs from RELL3054 to BE604, a distance of 93 light seconds.
-Nda Ze Shemeka Esq. arrived at BE604 after 1 day of travel!
-Hel Do Randolph Bo Ore departs from UEFELI1786 to SSIE3753, a distance of 4,533 light seconds.
-26 days have elapsed, with one trip in flight.
-Hel Do Randolph Bo Ore arrived at SSIE3753 after 9 days of travel!
-Fr. Carl Jacquelynn Ag departs from AR6848 to NET39, a distance of 2,924 light seconds.
+Idgerchri Deidra Ath Ichmon begins a voyage of 2136 light seconds, from AEDA8195 to QUE4589.
+13 days have elapsed, with one trip in flight.
+Idgerchri Deidra Ath Ichmon arrived at QUE4589 after 6 days of travel!
+Anto Ck leaves from RITLAN3292 to HO4828, a distance of 1540 light seconds.
+Anto Ck arrived at HO4828 after 5 days of travel!
+26 days have elapsed, with zero trips in flight.
+Briana Erndorainechrlb begins a voyage of 3259 light seconds, from INERRI4215 to INDAES1375.
+Briana Erndorainechrlb arrived at INDAES1375 after 7 days of travel!
+Fr. Meearl starts traveling to ENNI3300 from NORA4158, beginning a voyage of 3966 light seconds.
+Fr. To Este Agustin Elizbeth II departs from LYN2961 to ESHRN7330, a distance of 1298 light seconds.
+Fr. To Este Agustin Elizbeth II arrived at ESHRN7330 after 5 days of travel!
 52 days have elapsed, with one trip in flight.
-Fr. Carl Jacquelynn Ag arrived at NET39 after 7 days of travel!
-Mx. Jodee Maryln Ria Bern Mi Raphael departs from TOSO2634 to ENN2298, a distance of 2,013 light seconds.
-Mx. Jodee Maryln Ria Bern Mi Raphael arrived at ENN2298 after 6 days of travel!
-先生 Hiami Katie III departs from TAN564 to RINE250, a distance of 1,696 light seconds.
-Fr. Deborah Co Esq. departs from LAN2484 to CATH8535, a distance of 2,281 light seconds.
-先生 Hiami Katie III arrived at RINE250 after 5 days of travel!
-Fr. Deborah Co Esq. arrived at CATH8535 after 6 days of travel!
-Fr. Deborah Co Esq. departs from IG404 to ALIA1771, a distance of 4,517 light seconds.
-Fr. Maire Katherina departs from RDTTA5359 to IKELIMICLOREBB2069, a distance of 1,979 light seconds.
-103 days have elapsed, with two trips in flight.
-Fr. Maire Katherina arrived at IKELIMICLOREBB2069 after 6 days of travel!
-Fr. Deborah Co Esq. arrived at ALIA1771 after 9 days of travel!
+Fr. Meearl arrived at ENNI3300 after 8 days of travel!
+Briana Erndorainechrlb begins a voyage of 2832 light seconds, from EORG9092 to ESHLYNCYUN2941.
+Ginette Adjacq Ell starts traveling to ORRI5775 from GE520, beginning a voyage of 1811 light seconds.
+Ginette Adjacq Ell arrived at ORRI5775 after 5 days of travel!
+Briana Erndorainechrlb arrived at ESHLYNCYUN2941 after 7 days of travel!
+Anto Ck departs from OR4775 to CHAN3585, a distance of 3952 light seconds.
+Anto Ck arrived at CHAN3585 after 8 days of travel!
+Fr. Manuela begins a voyage of 1790 light seconds, from LA235 to NITAARA1663.
+Fr. Manuela arrived at NITAARA1663 after 5 days of travel!
+103 days have elapsed, with zero trips in flight.
+Olinda Wanda starts traveling to ERA2964 from BAERIC5035, beginning a voyage of 1793 light seconds.
 Thanks for using miners!
 #+END_SRC
