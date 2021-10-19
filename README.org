@@ -26,7 +26,7 @@ To load "miners":
 writing 1728 bytes from the read-only space at 0x300000000
 writing 1840 bytes from the static space at 0x300200000
 writing 0 bytes from the immobile space at 0x300300000
-writing 44630016 bytes from the dynamic space at 0x7003000000
+writing 44761088 bytes from the dynamic space at 0x7003000000
 done]
 > make install
 test -n "/Users/jacobsen/bin"  # $BINDIR
@@ -34,77 +34,68 @@ cp miners /Users/jacobsen/bin
 > miners
 
 Miners_______________________________________________________________
-Miss Dotty Mae Ka As (1, A3B586)
-Irving Madie Corrine (2, 98C839)
-Luci Vashti (3, 8786A3)
-Elaay Donnetta Lian Gaye Les Sitan IV (4, 57C266)
-Herr Tula (5, 63554B)
-Cl Rodrigo Will Bess IV (6, 997896)
-Breanna Etta Jacqmary Esq. (7, 446664)
-Larry Han (8, 9995B7)
-Asha Ff Anto Mariette Ol (9, 465595)
-Lian Tresa Wiang Robbi III (10, 73A798)
+Oley Rene Augustine Esq. (1, 797A63)
+Fr. Maire Katherina (2, 897A75)
+Mx. Jodee Maryln Ria Bern Mi Raphael (3, 7B7B67)
+Ms. Aleida Us (4, 9655A8)
+Hel Do Randolph Bo Ore (5, 499356)
+Fr. Carl Jacquelynn Ag (6, 987C73)
+先生 Hiami Katie III (7, 2796A7)
+Ms. Dan Qu Ei Jonah Juliette (8, 6783A6)
+Fr. Deborah Co Esq. (9, 9564A8)
+Nda Ze Shemeka Esq. (10, 455755)
 
 Planetoids (subset)__________________________________________________
-Planetoid KATH3500(11) at (2132.3 1144.8 739.0)
-Planetoid GERDOR4444(12) at (1190.6 1460.1 -812.8)
-Planetoid KO5308(13) at (1108.8 -1474.6 546.9)
-Planetoid STEP8712(14) at (-469.8 -1197.8 -159.8)
-Planetoid RIANSHAN2669(15) at (2393.8 287.9 -478.3)
-Planetoid GER9333(16) at (2519.5 -154.3 -181.9)
-Planetoid RY4096(17) at (179.5 2282.5 -642.8)
-Planetoid ESKARKAT7885(18) at (-1747.3 -532.6 811.7)
-Planetoid MONICKORRIRAANE4279(19) at (603.9 1638.5 -688.0)
-Planetoid AVEANN5138(20) at (1980.8 -1091.5 167.9)
+Planetoid LEONANETCHER9409(11) at (1189.9 -284.2 -713.3)
+Planetoid ARIE1142(12) at (-2383.4 814.8 545.9)
+Planetoid DA3952(13) at (-2035.1 1180.0 89.2)
+Planetoid VO7223(14) at (-684.7 1632.6 441.8)
+Planetoid WASHERAMI154(15) at (1447.1 1685.1 351.4)
+Planetoid LAR5746(16) at (-1444.0 -984.9 -570.7)
+Planetoid OT7544(17) at (785.0 2309.5 173.1)
+Planetoid ERR6252(18) at (-250.0 -2215.8 -502.8)
+Planetoid OLA5857(19) at (-1992.9 -507.0 285.8)
+Planetoid ELIN5510(20) at (-1607.9 -1326.4 229.4)
 
-Ten asteroid miners want to visit sixty-seven thousand eight hundred thirty-two planetoids.
+Ten asteroid miners want to visit two thousand two hundred fifty-six planetoids.
 
-1 seconds have elapsed.
-3 seconds have elapsed.
-7 seconds have elapsed.
-15 seconds have elapsed.
-45 seconds have elapsed.
-135 seconds have elapsed.
-405 seconds have elapsed.
-1,215 seconds have elapsed.
-2,615 seconds have elapsed.
-5,715 seconds have elapsed.
-14,430 seconds have elapsed.
-31,860 seconds have elapsed.
-66,720 seconds have elapsed.
-136,440 seconds have elapsed.
-275,880 seconds have elapsed.
-554,760 seconds have elapsed.
-Cl Rodrigo Will Bess IV departs from ORRI532 to CI650, a distance of 3,406 light seconds.
-1,112,520 seconds have elapsed.
-Asha Ff Anto Mariette Ol departs from ELIS9067 to DEAN3927, a distance of 3,133 light seconds.
-2,228,040 seconds have elapsed.
-Asha Ff Anto Mariette Ol departs from RETTBR7557 to ARC6430, a distance of 3,787 light seconds.
-Irving Madie Corrine departs from AL9563 to YL9166, a distance of 3,913 light seconds.
-Elaay Donnetta Lian Gaye Les Sitan IV departs from ENELE2433 to ANT8023, a distance of 964 light seconds.
-4,459,080 seconds have elapsed.
-Lian Tresa Wiang Robbi III departs from LINE6728 to TINSHERR274, a distance of 2,773 light seconds.
-Herr Tula departs from ESSLINDOM4757 to NELL8936, a distance of 4,157 light seconds.
-Elaay Donnetta Lian Gaye Les Sitan IV departs from KE3343 to LLAALIA7697, a distance of 3,047 light seconds.
-Miss Dotty Mae Ka As departs from NET9603 to FF708, a distance of 3,003 light seconds.
-Elaay Donnetta Lian Gaye Les Sitan IV departs from ANC7247 to COR6982, a distance of 3,269 light seconds.
-Luci Vashti departs from RM3335 to RICKLYNN1154, a distance of 2,458 light seconds.
-8,921,160 seconds have elapsed.
-Irving Madie Corrine departs from AMA6228 to ANCE7460, a distance of 2,005 light seconds.
-Herr Tula departs from DAN8853 to WI4, a distance of 3,364 light seconds.
-Irving Madie Corrine departs from ELYN9697 to VAHONETTBRANCE4613, a distance of 954 light seconds.
-Cl Rodrigo Will Bess IV departs from RENADA1185 to SHAR5136, a distance of 2,902 light seconds.
-Herr Tula departs from ERN3843 to HARLI5442, a distance of 2,671 light seconds.
-Cl Rodrigo Will Bess IV departs from LAR7895 to SHI3902, a distance of 3,094 light seconds.
-Larry Han departs from ENNINA3338 to UD7836, a distance of 3,255 light seconds.
-Herr Tula departs from ERRI8128 to SAN7002, a distance of 2,543 light seconds.
-Asha Ff Anto Mariette Ol departs from ARA2395 to RY1922, a distance of 3,374 light seconds.
-Asha Ff Anto Mariette Ol departs from NDR4250 to ARIS4769, a distance of 1,707 light seconds.
-Breanna Etta Jacqmary Esq. departs from BETHESTECHE7438 to IOMYRLEEREN4863, a distance of 1,667 light seconds.
-Breanna Etta Jacqmary Esq. departs from RLLYES3613 to AINUE2671, a distance of 3,025 light seconds.
-17,845,320 seconds have elapsed.
-Elaay Donnetta Lian Gaye Les Sitan IV departs from IANAANEL5321 to YE3282, a distance of 2,059 light seconds.
-Herr Tula departs from EY1588 to RLEE746, a distance of 4,039 light seconds.
-Irving Madie Corrine departs from ELO7903 to BE5851, a distance of 3,642 light seconds.
+1 second have elapsed, with zero trips in flight.
+3 seconds have elapsed, with zero trips in flight.
+7 seconds have elapsed, with zero trips in flight.
+15 seconds have elapsed, with zero trips in flight.
+45 seconds have elapsed, with zero trips in flight.
+2 minutes have elapsed, with zero trips in flight.
+7 minutes have elapsed, with zero trips in flight.
+20 minutes have elapsed, with zero trips in flight.
+44 minutes have elapsed, with zero trips in flight.
+2 hours have elapsed, with zero trips in flight.
+4 hours have elapsed, with zero trips in flight.
+9 hours have elapsed, with zero trips in flight.
+19 hours have elapsed, with zero trips in flight.
+2 days have elapsed, with zero trips in flight.
+3 days have elapsed, with zero trips in flight.
+6 days have elapsed, with zero trips in flight.
+Nda Ze Shemeka Esq. departs from ISHA7486 to ORE9578, a distance of 858 light seconds.
+Nda Ze Shemeka Esq. arrived at ORE9578 after 4 days of travel!
+13 days have elapsed, with zero trips in flight.
+Nda Ze Shemeka Esq. departs from RELL3054 to BE604, a distance of 93 light seconds.
+Nda Ze Shemeka Esq. arrived at BE604 after 1 day of travel!
+Hel Do Randolph Bo Ore departs from UEFELI1786 to SSIE3753, a distance of 4,533 light seconds.
+26 days have elapsed, with one trip in flight.
+Hel Do Randolph Bo Ore arrived at SSIE3753 after 9 days of travel!
+Fr. Carl Jacquelynn Ag departs from AR6848 to NET39, a distance of 2,924 light seconds.
+52 days have elapsed, with one trip in flight.
+Fr. Carl Jacquelynn Ag arrived at NET39 after 7 days of travel!
+Mx. Jodee Maryln Ria Bern Mi Raphael departs from TOSO2634 to ENN2298, a distance of 2,013 light seconds.
+Mx. Jodee Maryln Ria Bern Mi Raphael arrived at ENN2298 after 6 days of travel!
+先生 Hiami Katie III departs from TAN564 to RINE250, a distance of 1,696 light seconds.
+Fr. Deborah Co Esq. departs from LAN2484 to CATH8535, a distance of 2,281 light seconds.
+先生 Hiami Katie III arrived at RINE250 after 5 days of travel!
+Fr. Deborah Co Esq. arrived at CATH8535 after 6 days of travel!
+Fr. Deborah Co Esq. departs from IG404 to ALIA1771, a distance of 4,517 light seconds.
+Fr. Maire Katherina departs from RDTTA5359 to IKELIMICLOREBB2069, a distance of 1,979 light seconds.
+103 days have elapsed, with two trips in flight.
+Fr. Maire Katherina arrived at IKELIMICLOREBB2069 after 6 days of travel!
+Fr. Deborah Co Esq. arrived at ALIA1771 after 9 days of travel!
 Thanks for using miners!
 #+END_SRC

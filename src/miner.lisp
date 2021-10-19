@@ -58,3 +58,10 @@
                  :name (funcall name-gen-fn)))
 
 (print-as miner m "~a (~a, ~a)" (name m) (id m) (upp m))
+
+(setq miner-states '(resting
+                     fueling
+                     accelerating
+                     decelerating
+                     prospecting
+                     mining))

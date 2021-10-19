@@ -1,9 +1,17 @@
 (in-package :miners)
 
 (defclass planetoid ()
-  ((id :initarg :id :accessor id :initform (incf +current-id+))
-   (coords :initarg :coords :accessor coords)
-   (name :initarg :name :accessor name)))
+  ((id
+    :initarg :id
+    :accessor id
+    :initform (incf +current-id+))
+   (coords
+    :initarg :coords
+    :type point
+    :accessor coords)
+   (name
+    :initarg :name
+    :accessor name)))
 
 (defun new-planetoid (point-gen-fn name-gen-fn)
   (make-instance 'planetoid

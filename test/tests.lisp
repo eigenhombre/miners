@@ -2,27 +2,33 @@
 
 (defun run-tests () (1am:run))
 
+(test norm-test
+  (is (equal 1.0
+             (miners::norm '(1 0 0))))
+  (is (equal (miners::norm '(1 2 3))
+             (miners::norm (make-instance 'point :x 1 :y 2 :z 3)))))
+
+(test unit-test
+  (is (equal '(1.0 0.0 0.0) (miners::unit '(1.0 0 0))))
+  (is (equal '(1.0 0.0 0.0) (miners::unit (make-instance 'point :x 1 :y 0 :z 0)))))
+
+(test g-test
+  (is (= (/ miners::g-ls (miners::m->ls 1))
+         9.8)))
+
 (test miners-test
-  (testing "Making a new miner"
-    (let* ((m (miners:new-miner
-               #'nominal:full-name-as-str))
-           (u (miners:upp m)))
-      (testing "Type is correct"
-        (is (equal 'miners:miner (type-of m))))
-      (testing "Its name is a string"
-        (is (stringp (miners:name m)))
-        (testing "whose length is > 0"
-          (is (cl-oju:pos? (length (miners:name m))))))
-      (testing "Its UPP is a string"
-        (is (stringp u))
-        (testing "Whose length is 6"
-          (is (= 6 (length u)))))
-      (testing "Its printable representation's length is > 0"
-        (is (cl-oju:pos? (length (miners:miner-repr m)))))))
-  (testing "Make ten of 'em just to be sure"
-    (loop repeat 10
-          do (format t "~a~%" (miner-repr (miners:new-miner
-                                           #'nominal:full-name-as-str))))))
+  (let* ((m (miners:new-miner
+             #'nominal:full-name-as-str))
+         (u (miners:upp m)))
+    (is (equal 'miners:miner (type-of m)))
+    (is (stringp (miners:name m)))
+    (is (cl-oju:pos? (length (miners:name m))))
+    (is (stringp u))
+    (is (= 6 (length u)))
+    (is (cl-oju:pos? (length (miners:miner-repr m)))))
+  (loop repeat 10
+        do (format t "~a~%" (miner-repr (miners:new-miner
+                                         #'nominal:full-name-as-str)))))
 
 (defun planetoid-for-test ()
   (miners:new-planetoid #'(lambda ()
@@ -30,16 +36,12 @@
                                                       miners::+outer-radius-ls+))
                         #'miners:astroname))
 (test planetoids-test
-  (testing "Making a new planetoid"
-    (let ((p (planetoid-for-test)))
-      (testing "It has a location"
-        (is (equal 'miners:point (type-of (miners:coords p)))))
-      (testing "It has a name"
-        (is (name p)))))
-  (testing "Generate ten of them"
-    (loop repeat 10
-          do (format t "~a~%" (miners::planetoid-repr
-                               (planetoid-for-test))))))
+  (let ((p (planetoid-for-test)))
+    (is (equal 'miners:point (type-of (miners:coords p))))
+    (is (name p)))
+  (loop repeat 10
+        do (format t "~a~%" (miners::planetoid-repr
+                             (planetoid-for-test)))))
 
 (test middle-test
   (is (equalp '(0.5 0 0)
@@ -50,8 +52,29 @@
               (miners::middle '(0 0 0) '(1 1 1)))))
 
 (test trip-test
-  (testing "Making a new trip"
-    (loop repeat 20 do
-      (let ((pa (planetoid-for-test))
-            (pb (planetoid-for-test)))
-        (format t "~a~%" (miners::trip-repr (miners::new-trip pa pb)))))))
+  (loop repeat 20 do
+    (let ((pa (planetoid-for-test))
+          (pb (planetoid-for-test)))
+      (format t "~a~%" (miners::trip-repr (miners::new-trip pa pb))))))
+
+(test accelerating?-test
+  (is (miners::accelerating? '(0 0 0)
+                             '(10000 0 0)
+                             '(4999 0 0)))
+  (is (not (miners::accelerating? '(0 0 0)
+                                  '(10000 0 0)
+                                  '(5001 0 0)))))
+
+(defun planetoid-at (l)
+  (miners:new-planetoid #'(lambda ()
+                            (apply #'miners::new-point l))
+                        #'miners:astroname))
+
+(test arrival-test
+  (let* ((p0 (planetoid-at '(0 0 0)))
+         (p1 (planetoid-at '(1000 0 0)))
+         (tr (miners::new-trip p0 p1)))
+    (setf (miners::pos tr) (miners::new-point 1000 0 0))
+    (is (miners::arrived? tr))
+    (setf (miners::pos tr) (miners::new-point 1001 0 0))
+    (is (not (miners::arrived? tr)))))

@@ -12,11 +12,10 @@
                              (:file "id")
                              (:file "names")
                              (:file "random")
-                             (:file "time")
                              (:file "util")
-                             (:file "geom")
                              (:file "point" :depends-on ("util"
                                                          "random"))
+                             (:file "geom" :depends-on ("point"))
                              (:file "planetoid" :depends-on ("id"
                                                              "util"
                                                              "geom"
