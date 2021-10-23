@@ -18,7 +18,8 @@
 
 (test miners-test
   (let* ((m (miners:new-miner
-             #'nominal:full-name-as-str))
+             #'nominal:full-name-as-str
+             nil))
          (u (miners:upp m)))
     (is (equal 'miners:miner (type-of m)))
     (is (stringp (miners:name m)))
@@ -28,7 +29,8 @@
     (is (cl-oju:pos? (length (miners:miner-repr m)))))
   (loop repeat 10
         do (format t "~a~%" (miner-repr (miners:new-miner
-                                         #'nominal:full-name-as-str)))))
+                                         #'nominal:full-name-as-str
+                                         nil)))))
 
 (defun planetoid-for-test ()
   (miners:new-planetoid #'(lambda ()

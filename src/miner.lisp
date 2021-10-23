@@ -39,9 +39,12 @@
     :type integer
     :initform (d2.6)
     :initarg :social-standing)
+   (location
+    :accessor location
+    :initarg :location
+    :initform nil)
    (current-trip
     :accessor current-trip
-    :type trip
     :initform nil)))
 
 (defun upp (m)
@@ -53,15 +56,16 @@
                                         (education m)
                                         (social-standing m)))))
 
-(defun new-miner (name-gen-fn)
+(defun new-miner (name-gen-fn initial-location)
   (make-instance 'miner
-                 :name (funcall name-gen-fn)))
+                 :name (funcall name-gen-fn)
+                 :location initial-location))
 
 (print-as miner m "~a (~a, ~a)" (name m) (id m) (upp m))
 
-(setq miner-states '(resting
-                     fueling
-                     accelerating
-                     decelerating
-                     prospecting
-                     mining))
+;; (setq miner-states '(resting
+;;                      fueling
+;;                      accelerating
+;;                      decelerating
+;;                      prospecting
+;;                      mining))

@@ -15,9 +15,9 @@
 (defun alts (&rest args)
   (nth (random (length args)) args))
 
-(defun add-trip (m)
-  (let* ((p0 (rand-nth +all-planetoids+))
-         (p1 (rand-nth +all-planetoids+))
+(defun add-trip (planetoids m)
+  (let* ((p0 (location m))
+         (p1 (rand-nth planetoids))
          (tr (new-trip p0 p1)))
     (setf (current-trip m) tr)
     (format t "~a~%"
@@ -52,7 +52,8 @@
                          (name m)
                          (name (destination tr))
                          (duration-str (elapsed tr)))
-                 (setf (current-trip m) nil))))))
+                 (setf (current-trip m) nil)
+                 (setf (location m) (destination tr)))))))
 
 (defun command-line-args ()
   (cdr (or #+CLISP *args*
@@ -61,16 +62,23 @@
            #+CMU extensions:*command-line-words*
            nil)))
 
+(defun add-trips (planetoids miners)
+  (when (< (random 1000000) 1)
+    (let ((m (rand-nth miners)))
+      (when (null (current-trip m))
+        (add-trip planetoids m)))))
+
 (defun main* (num-miners num-iters)
   (init-random-number-generator)
-  (setq +all-miners+ (loop repeat num-miners
-                           collect (new-miner #'nominal:full-name-as-str)))
   (setq +all-planetoids+ (loop repeat (random 100000)
                                collect (new-planetoid
                                         #'(lambda ()
                                             (miners::rand-annulus-xyz miners::+inner-radius-ls+
                                                                       miners::+outer-radius-ls+))
                                         #'miners:astroname)))
+  (setq +all-miners+ (loop repeat num-miners
+                           collect (new-miner #'nominal:full-name-as-str
+                                              (rand-nth +all-planetoids+))))
 
   (format t "~%Miners_______________________________________________________________~%")
   (loop for m in +all-miners+
@@ -96,10 +104,7 @@
                        (loop for m in +all-miners+
                              when (current-trip m)
                                sum 1)))
-             (when (< (random 1000000) 1)
-               (let ((m (rand-nth +all-miners+)))
-                 (when (null (current-trip m))
-                   (add-trip m))))
+             (add-trips +all-planetoids+ +all-miners+)
              (update-miner-trips +all-miners+)))
   (format t "Thanks for using miners!~%"))
 
