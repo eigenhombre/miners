@@ -99,7 +99,7 @@
         with p = (perd)
         do (progn
              (when (funcall p)
-               (format t "~a have elapsed, with ~r trip~:p in flight.~%"
+               (format t "~a have elapsed, with ~[no~:;~:*~r~] trip~:p in flight.~%"
                        (duration-str i)
                        (loop for m in +all-miners+
                              when (current-trip m)
