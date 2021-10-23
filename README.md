@@ -2,7 +2,7 @@
 
 <img src="/planetoid.jpg" width="400">
 
-Another ([zero player](https://github.com/eigenhombre/galax#galax))
+Another [zero player](https://github.com/eigenhombre/galax#galax)
 game involving travel between planetoids.
 
 ## Small Goals
