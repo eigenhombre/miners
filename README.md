@@ -1,1 +1,1 @@
-![planetoid.jpg](/planetoid.jpg){:height="50%" width="50%"}
+![planetoid.jpg](/planetoid.jpg | width=50%)
