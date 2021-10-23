@@ -7,11 +7,13 @@ game involving travel between planetoids.
 
 ## Small Goals
 
-- named planetoids / asteroids distributed uniformly between an
+- [x] named planetoids / asteroids distributed uniformly between an
   annulus extending from the orbit of Mars to the orbit of Jupiter
-- "miners" with names, UPP[1], and initial locations
-- acceleration (non-relativistic), turnaround, and deceleration at 1 g
+- [x] "miners" with names, UPP[1], and initial locations
+- [x] acceleration (non-relativistic), turnaround, and deceleration at 1 g
   from original planetoid to destination asteroid.
+- [ ] add internal states and goals to miners
+- [ ] add strategies towards solving goals, à la [GPS](https://github.com/norvig/paip-lisp/blob/main/docs/chapter4.md#gps-the-general-problem-solver).
 
 [1] Attributes matching a popular, 1980s-era sci fi RPG
 
