@@ -1,1 +1,1 @@
-![img|320x271,50%](/planetoid.jpg)
+<img src="/planetoid.jpg" width="480">
