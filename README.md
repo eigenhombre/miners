@@ -1,1 +1,1 @@
-[[/planetoid.jpg|width=400px]]
+![img|320x271](/planetoid.jpg)
