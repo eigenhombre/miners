@@ -23,30 +23,30 @@ game involving travel between planetoids.
 $ miners
 
 Miners_______________________________________________________________
-Felicitas Jenise II (1037, 86C667)
-Herr Francisco Illi Onn Lberav Jr. (1038, 334986)
-Damien Fumiko Jayme (1039, 69A967)
-Scotty Emely Rose II (1040, 5C68B9)
-Chafran Shangi Lemuel Jr. (1041, 648699)
-Lady Lora Fe (1042, 3868C8)
-Darwin Arlinda Charlene Ita II (1043, 7A9769)
-Rcel Dana (1044, 38685C)
-Olegenelvcl Jr. (1045, AC5BA8)
-Ce Daniera Georcha (1046, 767873)
+Miss Artan La Theola Tijuana Twanda (53297, 859977)
+Dr. Im Domonique (53298, 9B894C)
+Vicenta IV (53299, 75A647)
+Miss Vin (53300, 6A3646)
+Fr. Ron My (53301, 867955)
+Ei Rie Robin (53302, 63BA85)
+Mr. Bern Whitney (53303, B48A49)
+Jude Landon Sammy Mich Brian Kenneth (53304, 887956)
+Iann Nel (53305, 8986B7)
+Josef (53306, 477865)
 
 Planetoids (subset)__________________________________________________
-Planetoid TINE1210(1) at (1462.0 -1947.0 -744.5)
-Planetoid CI1293(2) at (-1908.6 288.6 -768.9)
-Planetoid LVOND5499(3) at (-1112.8 2309.4 -879.7)
-Planetoid KATLIS2866(4) at (-1688.1 -1619.4 818.5)
-Planetoid EE187(5) at (1414.6 951.2 -563.5)
-Planetoid LV5488(6) at (1749.6 658.3 -700.6)
-Planetoid CI9771(7) at (1596.5 -147.1 -803.8)
-Planetoid ANIE1079(8) at (-1337.4 -1353.4 904.5)
-Planetoid EFRELLARO4181(9) at (-2138.1 382.9 813.3)
-Planetoid ERRI9982(10) at (1180.1 985.0 -859.0)
+Planetoid DRA3757(1) at (1910.7 -566.3 -192.8)
+Planetoid ULAUR8623(2) at (-1471.8 -203.0 -799.9)
+Planetoid ESTE8503(3) at (-672.4 -1934.0 545.2)
+Planetoid ANNELI6931(4) at (1816.5 -398.3 28.1)
+Planetoid SONOBLLI2510(5) at (-586.1 -1011.6 844.4)
+Planetoid EARL9718(6) at (2371.4 523.0 77.3)
+Planetoid JU9506(7) at (1140.9 -38.6 -593.0)
+Planetoid EO7198(8) at (-1984.3 787.9 -431.8)
+Planetoid BETH3111(9) at (-1231.4 1262.6 369.2)
+Planetoid LAADEL1146(10) at (-2078.4 -1173.8 12.9)
 
-Ten asteroid miners want to visit one thousand thirty-six planetoids.
+Ten asteroid miners want to visit fifty-three thousand two hundred ninety-six planetoids.
 
 1 second have elapsed, with no trips in flight.
 3 seconds have elapsed, with no trips in flight.
@@ -64,27 +64,25 @@ Ten asteroid miners want to visit one thousand thirty-six planetoids.
 2 days have elapsed, with no trips in flight.
 3 days have elapsed, with no trips in flight.
 6 days have elapsed, with no trips in flight.
-Olegenelvcl Jr. starts traveling to MIC5576 from ERRIRITFRED8683, beginning a voyage of 3024 light seconds.
+Miss Vin leaves from ORI5908 to DEMON2669, a distance of 1818 light seconds.
 13 days have elapsed, with one trip in flight.
-Olegenelvcl Jr. arrived at MIC5576 after 7 days of travel!
-Herr Francisco Illi Onn Lberav Jr. starts traveling to PACA2561 from MIC5148, beginning a voyage of 1427 light seconds.
-Herr Francisco Illi Onn Lberav Jr. arrived at PACA2561 after 5 days of travel!
-26 days have elapsed, with no trips in flight.
-Lady Lora Fe begins a voyage of 2004 light seconds, from DOR6160 to ORI6500.
-Scotty Emely Rose II begins a voyage of 3720 light seconds, from CRIS9526 to RIESHAWRE3575.
-Lady Lora Fe arrived at ORI6500 after 6 days of travel!
-Scotty Emely Rose II arrived at RIESHAWRE3575 after 8 days of travel!
-52 days have elapsed, with no trips in flight.
-Felicitas Jenise II departs from RS9321 to EYYOELO9274, a distance of 2079 light seconds.
-Felicitas Jenise II arrived at EYYOELO9274 after 6 days of travel!
-Damien Fumiko Jayme leaves from MARL3130 to ILLIANI5963, a distance of 3942 light seconds.
-Darwin Arlinda Charlene Ita II begins a voyage of 2039 light seconds, from DAR2220 to BY4048.
-Damien Fumiko Jayme arrived at ILLIANI5963 after 8 days of travel!
-Darwin Arlinda Charlene Ita II arrived at BY4048 after 6 days of travel!
-Olegenelvcl Jr. starts traveling to IN2147 from MIC5576, beginning a voyage of 3779 light seconds.
-103 days have elapsed, with one trip in flight.
-Olegenelvcl Jr. arrived at IN2147 after 8 days of travel!
-Scotty Emely Rose II begins a voyage of 2911 light seconds, from RIESHAWRE3575 to JACQ610.
-Scotty Emely Rose II arrived at JACQ610 after 7 days of travel!
+Miss Vin has arrived at DEMON2669, after 5 days
+Iann Nel starts traveling to IC9164 from EE4543, beginning a voyage of 3852 light seconds.
+26 days have elapsed, with one trip in flight.
+Iann Nel arrives at IC9164, after 8 days
+Iann Nel leaves from IC9164 to NIC63, a distance of 3115 light seconds.
+After 7 days, Iann Nel arrives at NIC63,
+Vicenta IV departs from LI5970 to INDANDR5151, a distance of 2517 light seconds.
+52 days have elapsed, with one trip in flight.
+Vicenta IV has arrived at INDANDR5151, after 6 days
+Dr. Im Domonique departs from LEELISSNNE1252 to JOHNUE7216, a distance of 2754 light seconds.
+Dr. Im Domonique arrives at JOHNUE7216, after 7 days
+Vicenta IV starts traveling to KATH1402 from INDANDR5151, beginning a voyage of 1614 light seconds.
+Iann Nel begins a voyage of 3198 light seconds, from NIC63 to ARIA7390.
+Vicenta IV arrives at KATH1402, after 5 days
+After 7 days, Iann Nel arrives at ARIA7390,
+Miss Vin starts traveling to ANTBR47 from DEMON2669, beginning a voyage of 1753 light seconds.
+After 5 days, Miss Vin arrives at ANTBR47,
+103 days have elapsed, with no trips in flight.
 Thanks for using miners!
 ```

@@ -15,25 +15,30 @@
 (defun alts (&rest args)
   (nth (random (length args)) args))
 
+(defun trip-phrase (miner origin destination dist)
+  (string-join-space
+   (mapcar #'lower-sym
+           (alts `(,miner departs from ,origin to ,(comma destination) a distance
+                          of ,(round dist) light seconds.)
+                 `(,miner leaves from ,origin to ,(comma destination) a distance
+                          of ,(round dist) light seconds.)
+                 `(,miner starts traveling to ,destination from ,(comma origin)
+                          beginning a voyage
+                          of ,(round dist) light seconds.)
+                 `(,miner begins a voyage of ,(round dist)
+                          light ,(comma "seconds")
+                          from ,origin
+                          to ,(period destination))))))
+
 (defun add-trip (planetoids m)
   (let* ((p0 (location m))
          (p1 (rand-nth planetoids))
          (tr (new-trip p0 p1)))
     (setf (current-trip m) tr)
-    (format t "~a~%"
-            (string-join-space
-             (mapcar #'lower-sym
-                     (alts `(,(name m) departs from ,(name p0) to ,(comma (name p1)) a distance
-                             of ,(round (trip-distance tr)) light seconds.)
-                           `(,(name m) leaves from ,(name p0) to ,(comma (name p1)) a distance
-                             of ,(round (trip-distance tr)) light seconds.)
-                           `(,(name m) starts traveling to ,(name p1) from ,(comma (name p0))
-                             beginning a voyage
-                             of ,(round (trip-distance tr)) light seconds.)
-                           `(,(name m) begins a voyage of ,(round (trip-distance tr))
-                             light ,(comma "seconds")
-                             from ,(name p0)
-                             to ,(period (name p1)))))))))
+    (format t "~a~%" (trip-phrase (name m)
+                                  (name p0)
+                                  (name p1)
+                                  (trip-distance tr)))))
 
 (defun duration-str (numsec)
   (cond
@@ -42,16 +47,25 @@
     ((< numsec 86400) (format nil "~d hour~:p" (round (/ numsec 3600))))
     (t (format nil "~a day~:p" (round (/ numsec 86400))))))
 
+(defun arrival-phrase (miner destination duration)
+  (string-join-space
+   (mapcar #'lower-sym
+           (alts `(,miner has arrived at ,(comma destination)
+                          after ,(duration-str duration))
+                 `(,miner arrives at ,(comma destination)
+                          after ,(duration-str duration))
+                 `("After" ,(comma (duration-str duration))
+                           ,miner arrives at ,(comma destination))))))
+
 (defun update-miner-trips (miners)
   (loop for m in miners
         do (let ((tr (current-trip m)))
              (when tr
                (update-trip g-ls 1 tr)
                (when (arrived? tr)
-                 (format t "~a arrived at ~a after ~a of travel!~%"
-                         (name m)
-                         (name (destination tr))
-                         (duration-str (elapsed tr)))
+                 (format t "~a~%" (arrival-phrase (name m)
+                                                  (name (destination tr))
+                                                  (elapsed tr)))
                  (setf (current-trip m) nil)
                  (setf (location m) (destination tr)))))))
 
