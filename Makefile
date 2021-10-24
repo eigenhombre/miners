@@ -19,5 +19,8 @@ test:
 	     --eval '(ql:quickload :miners/test)'  \
 	     --eval '(asdf:test-system :miners)'
 
+docker:
+	docker build -t miners .
+
 all:
 	make clean test miners install
