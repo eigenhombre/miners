@@ -16,7 +16,7 @@
   (nth (random (length args)) args))
 
 (defun trip-phrase (miner origin destination dist)
-  (string-join-space
+  (join-with-spaces
    (mapcar #'lower-sym
            (alts `(,miner departs from ,origin to ,(comma destination) a distance
                           of ,(round dist) light seconds.)
@@ -41,7 +41,7 @@
                                   (trip-distance tr)))))
 
 (defun arrival-phrase (miner destination duration)
-  (string-join-space
+  (join-with-spaces
    (mapcar #'lower-sym
            (alts `(,miner has arrived at ,(comma destination)
                           after ,(duration-str duration))

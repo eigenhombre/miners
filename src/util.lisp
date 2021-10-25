@@ -7,11 +7,8 @@
       (format nil "~a" (char *hexmap* n))
       "!"))
 
-(defun string-join-space (coll)
+(defun join-with-spaces (coll)
   (format nil "~{~A~^ ~}" coll))
-
-(defun string-join (coll)
-  (format nil "~{~A~}" coll))
 
 (defmacro print-as (type obj &rest format-args)
   "
