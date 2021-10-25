@@ -35,9 +35,10 @@
 (defgeneric zerovec (vec))
 
 (defmethod zerovec ((vec list))
-  (loop for el in vec
-        maximizing (abs el) into m
-        finally (return (zerop m))))
+  (every #'zerop vec))
+
+(defmethod zerovec ((vec point))
+  (zerovec (list (x vec) (y vec) (z vec))))
 
 (defgeneric unit (vec))
 
