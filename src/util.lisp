@@ -29,6 +29,13 @@
          (print-unreadable-object (,obj ,stream-sym :type t :identity t)
            (format ,stream-sym ,@format-args))))))
 
+(defun duration-str (numsec)
+  (cond
+    ((< numsec 60) (format nil "~d second~:p" numsec))
+    ((< numsec 3600) (format nil "~d minute~:p" (round (/ numsec 60))))
+    ((< numsec 86400) (format nil "~d hour~:p" (round (/ numsec 3600))))
+    (t (format nil "~a day~:p" (round (/ numsec 86400))))))
+
 (defun nextnext (n)
   (cond
     ((< n 10) (1+ n))

@@ -40,13 +40,6 @@
                                   (name p1)
                                   (trip-distance tr)))))
 
-(defun duration-str (numsec)
-  (cond
-    ((< numsec 60) (format nil "~d second~:p" numsec))
-    ((< numsec 3600) (format nil "~d minute~:p" (round (/ numsec 60))))
-    ((< numsec 86400) (format nil "~d hour~:p" (round (/ numsec 3600))))
-    (t (format nil "~a day~:p" (round (/ numsec 86400))))))
-
 (defun arrival-phrase (miner destination duration)
   (string-join-space
    (mapcar #'lower-sym
@@ -57,7 +50,7 @@
                  `("After" ,(comma (duration-str duration))
                            ,miner arrives at ,(comma destination))))))
 
-(defun update-miner-trips (miners)
+(defun advance-trips (miners)
   (loop for m in miners
         do (let ((tr (current-trip m)))
              (when tr
@@ -119,7 +112,7 @@
                              when (current-trip m)
                                sum 1)))
              (add-trips +all-planetoids+ +all-miners+)
-             (update-miner-trips +all-miners+)))
+             (advance-trips +all-miners+)))
   (format t "Thanks for using miners!~%"))
 
 (defun int-arg (n default)
