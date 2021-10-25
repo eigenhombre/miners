@@ -67,13 +67,18 @@
          (cur (pos tr))
          (l1 (coords (destination tr)))
          (to-dest (vminus l1 cur)))
-    (or (zerovec to-dest)
-        (let ((vdotdir (dot v (unit to-dest))))
-          (or (< (norm to-dest) +arrival-radius+)
-              ;; This is a bit of a hack.  When ship arrives, if it
-              ;; overshoots, it tends to bounce around; this catches that.
-              ;; Better math might help:
-              (< (/ vdotdir (norm v)) 0.9))))))
+    (cond
+      ((zerovec to-dest) t)
+      ((< +arrival-radius+ (norm to-dest)) nil)
+      ((zerovec v) t)
+      ;; This is a bit of a hack.  When ship arrives, if it
+      ;; overshoots, it tends to bounce around; this catches that.
+      ;; Better math might help:
+      ((< (/ (dot v (unit to-dest))
+             (norm v))
+          0.9)
+       t)
+      (t nil))))
 
 (defun increase-accel? (vdotdir a r)
   (< vdotdir (sqrt (* 2 a r))))
