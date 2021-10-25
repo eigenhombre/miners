@@ -32,10 +32,19 @@
 (defmethod norm ((vec point))
   (norm (list (x vec) (y vec) (z vec))))
 
+(defgeneric zerovec (vec))
+
+(defmethod zerovec ((vec list))
+  (loop for el in vec
+        maximizing (abs el) into m
+        finally (return (zerop m))))
+
 (defgeneric unit (vec))
 
 (defmethod unit ((vec list))
   (let ((vn (norm vec)))
+    (when (zerop vn)
+      (error "cannot rescale zero vector!"))
     (destructuring-bind (vx vy vz) vec
       (list (/ vx vn)
             (/ vy vn)
