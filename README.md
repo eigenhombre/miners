@@ -5,6 +5,8 @@
 Another [zero player](https://github.com/eigenhombre/galax#galax)
 game involving travel between planetoids.
 
+![build](https://github.com/eigenhombre/miners/actions/workflows/build.yml/badge.svg)
+
 ## Small Goals
 
 - [x] named planetoids / asteroids distributed uniformly between an
