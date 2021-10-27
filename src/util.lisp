@@ -49,3 +49,10 @@
         (when fire?
           (incf next (nextnext next)))
         fire?))))
+
+(defun command-line-args ()
+  (cdr (or #+CLISP *args*
+           #+SBCL sb-ext:*posix-argv*
+           #+LISPWORKS system:*line-arguments-list*
+           #+CMU extensions:*command-line-words*
+           nil)))

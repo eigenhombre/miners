@@ -15,6 +15,7 @@ game involving travel between planetoids.
 - [x] acceleration (non-relativistic), turnaround, and deceleration at 1 g
   from original planetoid to destination asteroid.
 - [ ] add internal states and goals to miners
+  - [x] miners can get hungrier (poor things!)
 - [ ] add strategies towards solving goals, à la [GPS](https://github.com/norvig/paip-lisp/blob/main/docs/chapter4.md#gps-the-general-problem-solver).
 
 [1] Attributes matching a popular, 1980s-era sci fi RPG

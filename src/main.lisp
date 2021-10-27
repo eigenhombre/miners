@@ -50,11 +50,11 @@
                  `("After" ,(comma (duration-str duration))
                            ,miner arrives at ,(comma destination))))))
 
-(defun advance-trips (miners)
+(defun advance-trips (numsec miners)
   (loop for m in miners
         do (let ((tr (current-trip m)))
-             (when tr
-               (update-trip g-ls 1 tr)
+             (when (and tr (alive m))
+               (update-trip g-ls numsec tr)
                (when (arrived? tr)
                  (format t "~a~%" (arrival-phrase (name m)
                                                   (name (destination tr))
@@ -62,18 +62,60 @@
                  (setf (current-trip m) nil)
                  (setf (location m) (destination tr)))))))
 
-(defun command-line-args ()
-  (cdr (or #+CLISP *args*
-           #+SBCL sb-ext:*posix-argv*
-           #+LISPWORKS system:*line-arguments-list*
-           #+CMU extensions:*command-line-words*
-           nil)))
+;; hunger/satiety:
+(defun snack-time (miner)
+  (format t "~a is a little peckish...~%" (name miner)))
+
+(defun meal-time (miner)
+  (format t "~a is ready for a meal.~%" (name miner)))
+
+(defun rather-hungry (miner)
+  (format t "~a is quite hungry!~%" (name miner)))
+
+(defun ravenous (miner)
+  (format t "~a is absolutely ravenous!~%" (name miner)))
+
+(defun starving (miner)
+  (format t "~a is about to die of starvation!~%" (name miner)))
+
+(defun dead (miner)
+  (format t "~a is dead... RIP.~%" (name miner))
+  (setf (alive miner) nil))
+
+(defparameter satiety-thresholds
+  `((,#'snack-time    . 0.95)
+    (,#'meal-time     . 0.8)
+    (,#'rather-hungry . 0.6)
+    (,#'ravenous      . 0.5)
+    (,#'starving      . 0.3)
+    (,#'dead          . 0.0)))
+
+(defun advance-miner-hunger (numsec miner)
+  ;; FIXME: NOT thread-safe:
+  (let* ((cur-satiety (satiety miner))
+         (new-satiety (max 0 (- cur-satiety
+                                (/ numsec 86400 10)))))
+    (setf (satiety miner) new-satiety)
+    (loop for (hunger-change-fn . thresh) in satiety-thresholds
+          do (when (and (< thresh cur-satiety)
+                        (<= new-satiety thresh)
+                        (< new-satiety cur-satiety))
+               (funcall hunger-change-fn miner)
+               (return)))))
+
+(defun advance-miners-hunger (numsec miners)
+  (loop for m in miners
+        do (advance-miner-hunger numsec m)))
 
 (defun add-trips (planetoids miners)
-  (when (< (random 1000000) 1)
+  (when (< (random 100000) 1)
     (let ((m (rand-nth miners)))
-      (when (null (current-trip m))
+      (when (and (alive m)
+                 (null (current-trip m)))
         (add-trip planetoids m)))))
+
+(defun trips-in-progress (miners)
+  (loop for m in miners when (current-trip m) sum 1))
 
 (defun main* (num-miners num-iters)
   (init-random-number-generator)
@@ -103,16 +145,19 @@
 
   ;; Main loop
   (loop for i from 0 to num-iters
-        with p = (perd)
+        with p = (perd) and delta-t = 1  ;; second(s)
         do (progn
              (when (funcall p)
                (format t "~a have elapsed, with ~[no~:;~:*~r~] trip~:p in flight.~%"
                        (duration-str i)
-                       (loop for m in +all-miners+
-                             when (current-trip m)
-                               sum 1)))
+                       (trips-in-progress +all-miners+)))
              (add-trips +all-planetoids+ +all-miners+)
-             (advance-trips +all-miners+)))
+             (advance-trips delta-t +all-miners+)
+             ;; Uncomment this if you want all miners to starve to
+             ;; death; work in progress: add ships, with food in them.
+             ;; Eventually they will trade, mine, exchange crews, etc.
+             ;; (advance-miners-hunger delta-t +all-miners+)
+             ))
   (format t "Thanks for using miners!~%"))
 
 (defun int-arg (n default)
