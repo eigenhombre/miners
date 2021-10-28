@@ -27,29 +27,6 @@ game involving travel between planetoids.
 ```
 $ miners
 
-This is SBCL 2.1.8, an implementation of ANSI Common Lisp.
-More information about SBCL is available at <http://www.sbcl.org/>.
-
-SBCL is free software, provided as is, with absolutely no warranty.
-It is mostly in the public domain; some portions are provided under
-BSD-style licenses.  See the CREDITS and COPYING files in the
-distribution for more information.
-To load "miners":
-  Load 1 ASDF system:
-    miners
-; Loading "miners"
-..................................................
-[package nominal].................................
-[package miners].......
-[undoing binding stack and other enclosing state... done]
-[performing final GC... done]
-[saving current Lisp image into miners:
-writing 1728 bytes from the read-only space at 0x300000000
-writing 1840 bytes from the static space at 0x300200000
-writing 0 bytes from the immobile space at 0x300300000
-writing 45088768 bytes from the dynamic space at 0x7003000000
-done]
-
 Miners_______________________________________________________________
 Danica Antoya Kenneth Dusty Lorena (61747, 776847)
 Lady Fran Elyn Merrill Denis (61748, 772367)
