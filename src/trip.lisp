@@ -5,6 +5,10 @@
     :initarg :id
     :accessor id
     :initform (incf miners::+current-id+))
+   (ship
+    :initarg :ship
+    :type miners::ship
+    :accessor ship)
    (origin
     :accessor origin
     :initarg :origin
@@ -34,9 +38,11 @@
 (defun new-trip (origin destination)
   (let* ((l0 (as-list (coords origin)))
          (l1 (as-list (coords destination)))
-         (mp (apply #'new-point (middle l0 l1))))
+         (mp (apply #'new-point (middle l0 l1)))
+         (ship (make-instance 'ship)))
     (make-instance 'trip
                    :origin origin
+                   :ship ship
                    :destination destination
                    :midpoint mp
                    :pos (coords origin))))
@@ -45,10 +51,11 @@
   (norm (vminus (as-list (coords (origin tr)))
                 (as-list (coords (destination tr))))))
 
-(print-as trip tr "TRIP ~a (~a -> ~a, ~,2f light seconds, x=~{ ~9,6f~}, v=~{ ~9,6f~}, ~d seconds elapsed"
+(print-as trip tr "TRIP ~a (~a -> ~a via ~a, ~,2f light seconds, x=~{ ~9,6f~}, v=~{ ~9,6f~}, ~d seconds elapsed"
           (id tr)
           (name (origin tr))
           (name (destination tr))
+          (name (ship tr))
           (trip-distance tr)
           (as-list (pos tr))
           (vel tr)

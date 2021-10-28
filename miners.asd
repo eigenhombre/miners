@@ -10,9 +10,10 @@
                 :serial t
                 :components ((:file "package")
                              (:file "id")
-                             (:file "names")
-                             (:file "random")
                              (:file "util")
+                             (:file "random")
+                             (:file "names" :depends-on ("util"))
+                             (:file "ship" :depends-on ("names"))
                              (:file "point" :depends-on ("util"
                                                          "random"))
                              (:file "geom" :depends-on ("point"))

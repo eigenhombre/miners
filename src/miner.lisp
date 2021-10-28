@@ -2,7 +2,7 @@
 
 (defclass miner ()
   ((name
-    :accessor name :type integer :initarg :name)
+    :accessor name :initarg :name)
    (id
     :initarg :id :accessor id :initform (incf +current-id+))
    (strength

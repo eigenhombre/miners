@@ -15,30 +15,35 @@
 (defun alts (&rest args)
   (nth (random (length args)) args))
 
-(defun trip-phrase (miner origin destination dist)
+(defun departure-text (miner shipname origin destination dist)
   (join-with-spaces
-   (mapcar #'lower-sym
-           (alts `(,miner departs from ,origin to ,(comma destination) a distance
-                          of ,(round dist) light seconds.)
-                 `(,miner leaves from ,origin to ,(comma destination) a distance
-                          of ,(round dist) light seconds.)
-                 `(,miner starts traveling to ,destination from ,(comma origin)
-                          beginning a voyage
-                          of ,(round dist) light seconds.)
-                 `(,miner begins a voyage of ,(round dist)
-                          light ,(comma "seconds")
-                          from ,origin
-                          to ,(period destination))))))
+   (mapcar
+    #'lower-sym
+    (alts `(,miner departs on the ,shipname from ,origin to
+                   ,(comma destination) a distance
+                   of ,(round dist) light seconds.)
+          `(,miner leaves on the ,shipname from ,origin to
+                   ,(comma destination) a distance
+                   of ,(round dist) light seconds.)
+          `("The" ,(comma shipname) carrying ,(comma miner)
+                starts traveling to ,destination from ,(comma origin)
+                beginning a voyage
+                of ,(round dist) light seconds.)
+          `(,miner begins a voyage of ,(round dist)
+                   light seconds on the ,(comma shipname)
+                   from ,origin
+                   to ,(period destination))))))
 
 (defun add-trip (planetoids m)
   (let* ((p0 (location m))
          (p1 (rand-nth planetoids))
          (tr (new-trip p0 p1)))
     (setf (current-trip m) tr)
-    (format t "~a~%" (trip-phrase (name m)
-                                  (name p0)
-                                  (name p1)
-                                  (trip-distance tr)))))
+    (format t "~a~%" (departure-text (name m)
+                                     (name (ship tr))
+                                     (name p0)
+                                     (name p1)
+                                     (trip-distance tr)))))
 
 (defun arrival-phrase (miner destination duration)
   (join-with-spaces

@@ -9,3 +9,9 @@
   (string-upcase (format nil "~a~a"
                          (ngram-name)
                          (random 10000))))
+
+(defun ship-name ()
+  (let ((adj (nominal:adjective))
+        (noun (nominal:animal-as-syms)))
+    (join-with-spaces (mapcar #'string-capitalize
+                              (list* adj noun)))))
