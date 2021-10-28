@@ -9,7 +9,7 @@ game involving travel between planetoids.
 
 ## Small Goals
 
-- [x] named planetoids / asteroids distributed uniformly between an
+- [x] named planetoids / asteroids distributed uniformly within an
   annulus extending from the orbit of Mars to the orbit of Jupiter
 - [x] "miners" with names, UPP[1], and initial locations
 - [x] acceleration (non-relativistic), turnaround, and deceleration at 1 g
