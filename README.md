@@ -14,6 +14,8 @@ game involving travel between planetoids.
 - [x] "miners" with names, UPP[1], and initial locations
 - [x] acceleration (non-relativistic), turnaround, and deceleration at 1 g
   from original planetoid to destination asteroid.
+- [x] miners travel on ships, which have names
+  - [ ] ships carry crew, passengers and provisions
 - [ ] add internal states and goals to miners
   - [x] miners can get hungrier (poor things!)
 - [ ] add strategies towards solving goals, à la [GPS](https://github.com/norvig/paip-lisp/blob/main/docs/chapter4.md#gps-the-general-problem-solver).
