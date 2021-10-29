@@ -77,6 +77,7 @@
     (cond
       ((zerovec to-dest) t)
       ((< (norm to-dest) +arrival-radius+) t)
+      ((zerovec v) nil)
       ;; This is a bit of a hack.  When ship arrives, if it
       ;; overshoots, it tends to bounce around; this catches that.
       ;; Better math might help:
