@@ -40,7 +40,7 @@
                  :name (funcall name-gen-fn)
                  :location initial-location))
 
-(print-as miner m "~a (~a, ~a)" (name m) (id m) (upp m))
+(print-as miner m "~a (~a)" (name m) (upp m))
 
 ;; (setq miner-states '(resting
 ;;                      fueling

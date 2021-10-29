@@ -15,6 +15,16 @@
 (defun alts (&rest args)
   (nth (random (length args)) args))
 
+(defvar *standard-line-wrap* 72)
+
+(defun wr (s)
+  (wrap *standard-line-wrap* s))
+
+(defun capstr (s) (string-capitalize s :end 1))
+
+(defun printwr (s)
+  (format t "~a~%" (capstr (wr s))))
+
 (defun departure-text (miner shipname origin destination dist)
   (join-with-spaces
    (mapcar
@@ -25,7 +35,7 @@
           `(,miner leaves on the ,shipname from ,origin to
                    ,(comma destination) a distance
                    of ,(round dist) light seconds.)
-          `("The" ,(comma shipname) carrying ,(comma miner)
+          `(the ,(comma shipname) carrying ,(comma miner)
                 starts traveling to ,destination from ,(comma origin)
                 beginning a voyage
                 of ,(round dist) light seconds.)
@@ -39,21 +49,28 @@
          (p1 (rand-nth planetoids))
          (tr (new-trip p0 p1)))
     (setf (current-trip m) tr)
-    (format t "~a~%" (departure-text (name m)
-                                     (name (ship tr))
-                                     (name p0)
-                                     (name p1)
-                                     (trip-distance tr)))))
+    (printwr (departure-text (name m)
+                             (name (ship tr))
+                             (name p0)
+                             (name p1)
+                             (trip-distance tr)))))
 
-(defun arrival-phrase (miner destination duration)
-  (join-with-spaces
-   (mapcar #'lower-sym
-           (alts `(,miner has arrived at ,(comma destination)
-                          after ,(duration-str duration))
-                 `(,miner arrives at ,(comma destination)
-                          after ,(duration-str duration))
-                 `("After" ,(comma (duration-str duration))
-                           ,miner arrives at ,(comma destination))))))
+(defun after-phrase (event elapsed)
+  (alts `(,@event after ,elapsed)
+        `("After" ,(comma elapsed) ,@event)))
+
+(defun arrival-event-phrase (miner-name ship-name destination)
+  (alts `(,miner-name arrives at ,destination on the ,ship-name)
+        `(,miner-name has arrived at ,destination on the ,ship-name)
+        `(the ,ship-name arrives at ,(comma destination) carrying ,miner-name)
+        `(the ,ship-name lands at ,(comma destination) carrying ,miner-name)
+        `(the ,ship-name has arrived at ,(comma destination) carrying ,miner-name)))
+
+(defun arrival-phrase (miner ship-name destination duration)
+  (period (join-with-spaces
+           (mapcar #'lower-sym
+                   (after-phrase (arrival-event-phrase miner ship-name destination)
+                                 (duration-str duration))))))
 
 (defun advance-trips (numsec miners)
   (loop for m in miners
@@ -61,9 +78,10 @@
              (when (and tr (alive m))
                (update-trip g-ls numsec tr)
                (when (arrived? tr)
-                 (format t "~a~%" (arrival-phrase (name m)
-                                                  (name (destination tr))
-                                                  (elapsed tr)))
+                 (printwr (arrival-phrase (name m)
+                                          (name (ship tr))
+                                          (name (destination tr))
+                                          (elapsed tr)))
                  (setf (current-trip m) nil)
                  (setf (location m) (destination tr)))))))
 
@@ -143,18 +161,18 @@
         do (format t "~A~%"
                    (planetoid-repr p)))
 
-  (format t
-          "~%~@(~r~) asteroid miners want to visit ~r planetoids.~%~%"
-          (length +all-miners+)
-          (length +all-planetoids+))
+  (printwr (format nil
+                   "~%~@(~r~) asteroid miners want to visit ~r planetoids.~%"
+                   (length +all-miners+)
+                   (length +all-planetoids+)))
 
   ;; Main loop
   (loop for i from 0 to num-iters
         with p = (perd) and delta-t = 1  ;; second(s)
         do (progn
              (when (funcall p)
-               (format t "~a have elapsed, with ~[no~:;~:*~r~] trip~:p in flight.~%"
-                       (duration-str i)
+               (format t "~%~a have elapsed, with ~[no~:;~:*~r~] trip~:p in flight.~%"
+                       (capstr (duration-str i))
                        (trips-in-progress +all-miners+)))
              (add-trips +all-planetoids+ +all-miners+)
              (advance-trips delta-t +all-miners+)

@@ -19,7 +19,7 @@
                  :name (funcall name-gen-fn)))
 
 (print-as planetoid p
-          "Planetoid ~a(~a) at ~a"
+          "Planetoid ~a(id=~a) at ~a"
           (name p)
           (id p)
           (point-repr (coords p)))

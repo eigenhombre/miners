@@ -76,8 +76,7 @@
          (to-dest (vminus l1 cur)))
     (cond
       ((zerovec to-dest) t)
-      ((< +arrival-radius+ (norm to-dest)) nil)
-      ((zerovec v) t)
+      ((< (norm to-dest) +arrival-radius+) t)
       ;; This is a bit of a hack.  When ship arrives, if it
       ;; overshoots, it tends to bounce around; this catches that.
       ;; Better math might help:
@@ -124,7 +123,7 @@
  (setq p0 (planetoid-at (list 0 0 0)))
  (setq p1 (planetoid-at (list 1000 0 0)))
  (setq tr (miners::new-trip p0 p1))
- (loop repeat 200000
+ (loop repeat 20000
        do (progn
             (update-trip g-ls 100 tr)
             (format t "~a~%" (trip-repr tr)))

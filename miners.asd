@@ -3,7 +3,7 @@
   :build-pathname "miners"
   :entry-point "miners:main"
   :in-order-to ((asdf:test-op (asdf:test-op :miners/test)))
-  :depends-on (:arrows :beast :nominal :cl-oju)
+  :depends-on (:arrows :beast :nominal :cl-oju :str)
   :in-order-to ((test-op (test-op "miners/tests")))
   :serial t
   :components ((:module "src"
