@@ -29,11 +29,11 @@
   (join-with-spaces
    (mapcar
     #'lower-sym
-    (alts `(,miner departs on the ,shipname from ,origin to
-                   ,(comma destination) a distance
-                   of ,(round dist) light seconds.)
+    (alts `(,miner departs on the ,(comma shipname) travelling from
+                   ,origin to ,(comma destination) a distance of
+                   ,(round dist) light seconds.)
           `(,miner leaves on the ,shipname from ,origin to
-                   ,(comma destination) a distance
+                   ,(comma destination) a journey
                    of ,(round dist) light seconds.)
           `(the ,(comma shipname) carrying ,(comma miner)
                 starts traveling to ,destination from ,(comma origin)
@@ -61,7 +61,7 @@
 
 (defun arrival-event-phrase (miner-name ship-name destination)
   (alts `(,miner-name arrives at ,destination on the ,ship-name)
-        `(,miner-name has arrived at ,destination on the ,ship-name)
+        `(,miner-name has arrived at ,(comma destination) on the ,ship-name)
         `(the ,ship-name arrives at ,(comma destination) carrying ,miner-name)
         `(the ,ship-name lands at ,(comma destination) carrying ,miner-name)
         `(the ,ship-name has arrived at ,(comma destination) carrying ,miner-name)))
@@ -171,8 +171,9 @@
         with p = (perd) and delta-t = 1  ;; second(s)
         do (progn
              (when (funcall p)
-               (format t "~%~a have elapsed, with ~[no~:;~:*~r~] trip~:p in flight.~%"
+               (format t "~%~a ~[have~;has~:;have~] elapsed, with ~[no~:;~:*~r~] trip~:p in flight.~%"
                        (capstr (duration-str i))
+                       i
                        (trips-in-progress +all-miners+)))
              (add-trips +all-planetoids+ +all-miners+)
              (advance-trips delta-t +all-miners+)
@@ -195,3 +196,6 @@
     (t (e)
       (declare (ignore e))
       (format t "~%The solar system comes to a sudden end.~%"))))
+
+(comment
+ (main* 10 1000000))
