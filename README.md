@@ -3,7 +3,7 @@
 <img src="/planetoid.jpg" width="400">
 
 Another [zero player](https://github.com/eigenhombre/galax#galax)
-game involving travel between planetoids.
+game; this one involving travel between planetoids.
 
 ![build](https://github.com/eigenhombre/miners/actions/workflows/build.yml/badge.svg)
 
